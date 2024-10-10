@@ -1,0 +1,158 @@
+SEED: 2024
+output_dir: 'data/experiments/gembench/simple_policy_ptv3/debug'
+tfboard_log_dir: null # 'data/TFBoard/xxx'
+checkpoint: null
+checkpoint_strict_load: False # true, false
+
+TRAIN:
+  resume_training: True
+  resume_encoder_only: False
+  freeze_params:
+    encoder: False
+    decoder: False
+
+  train_batch_size: 64
+  val_batch_size: 64
+
+  gradient_accumulation_steps: 1
+  num_epochs: null
+  num_train_steps: null #200000
+  warmup_steps: 5000
+  log_steps: 100
+  save_steps: 100
+  val_steps: 100
+
+  optim: 'adamw'
+  learning_rate: 1e-4
+  lr_sched: 'cosine' # inverse_sqrt, linear, cosine, cosine_cycle
+  num_cosine_cycles: null # float
+  betas: [0.9, 0.98]
+  weight_decay: 0.05
+  grad_norm: 10
+  n_workers: 4
+  pin_mem: True
+
+TRAIN_DATASET:
+  data_dir: 'data/gembench/train_dataset/keysteps_bbox_pcd/seed0/voxel1cm'
+  instr_embed_file: 'data/gembench/train_dataset/keysteps_bbox_pcd/instr_embeds_clip.npy'
+  taskvar_instr_file: 'assets/taskvars_instructions_new.json'
+  taskvar_file: 'assets/taskvars_train.json'
+  num_points: 4096
+  xyz_shift: center # none, center, gripper
+  xyz_norm: False
+  use_height: False
+  sample_points_by_distance: False
+  rot_type: euler_disc # quat, rot6d, euler, euler_delta, euler_disc
+  pos_type: disc # disc, cont
+  instr_embed_type: 'last' # last, all
+  all_step_in_batch: True
+  include_last_step: False
+  rm_table: True
+  rm_robot: none  # none, gt, box, box_keep_gripper
+  augment_pc: True
+  aug_max_rot: 45
+  same_npoints_per_example: False
+  rm_pc_outliers: False
+  rm_pc_outliers_neighbors: 25
+  pos_bins: 40
+  pos_bin_size: 0.01
+  pos_heatmap_type: 'dist' # plain, dist
+  pos_heatmap_no_robot: False
+  real_robot: False
+
+VAL_DATASET:
+  use_val: True
+  data_dir: 'data/gembench/val_dataset/keysteps_bbox_pcd/seed100/voxel1cm'
+  instr_embed_file: 'data/gembench/train_dataset/keysteps_bbox_pcd/instr_embeds_clip.npy'
+  taskvar_instr_file: 'assets/taskvars_instructions_new.json'
+  taskvar_file: 'assets/taskvars_train.json'
+  num_points: 4096
+  xyz_shift: center # none, center, gripper
+  xyz_norm: False
+  use_height: False
+  sample_points_by_distance: False
+  rot_type: euler_disc # quat, rot6d, euler, euler_delta, euler_disc
+  pos_type: disc # disc, cont
+  instr_embed_type: 'last' # last, all
+  all_step_in_batch: True
+  include_last_step: False
+  rm_table: True
+  rm_robot: none  # none, gt, box, box_keep_gripper
+  augment_pc: True
+  aug_max_rot: 45
+  same_npoints_per_example: False
+  rm_pc_outliers: False
+  rm_pc_outliers_neighbors: 25
+  pos_bins: 40
+  pos_bin_size: 0.01
+  pos_heatmap_type: 'dist' # plain, dist
+  pos_heatmap_no_robot: False
+  real_robot: False
+  
+MODEL:
+  model_class: 'SimplePolicyPTV3AdaNorm'
+
+  ptv3_config:
+    in_channels: 6
+    order: ["z", "z-trans", "hilbert", "hilbert-trans"]
+    stride: [2, 2, 2, 2]
+    enc_depths: [2, 2, 2, 6, 2]
+    enc_channels: [32, 64, 128, 256, 512]
+    enc_num_head: [2, 4, 8, 16, 32]
+    enc_patch_size: [128, 128, 128, 128, 128]
+    dec_depths: [2, 2, 2, 2]
+    dec_channels: [64, 64, 128, 256]
+    dec_num_head: [4, 4, 8, 16]
+    dec_patch_size: [128, 128, 128, 128]
+    mlp_ratio: 4
+    qkv_bias: True
+    qk_scale: null
+    qk_norm: False
+    scaled_cosine_attn: False
+    attn_drop: 0.1
+    proj_drop: 0.1
+    drop_path: 0.1
+    pre_norm: True
+    shuffle_orders: True
+    enable_rpe: False
+    enable_flash: True
+    upcast_attention: False
+    upcast_softmax: False
+    cls_mode: False
+    pdnorm_bn: True
+    pdnorm_ln: True
+    pdnorm_decouple: False
+    pdnorm_adaptive: True
+    pdnorm_affine: True
+    pdnorm_conditions: null
+    pdnorm_only_decoder: False
+    add_coords_in_attn: 'none' # none, qk, qkv
+
+  action_config:
+    voxel_size: 0.01 # 1cm
+    context_channels: 256
+
+    txt_ft_size: 512
+    max_txt_len: 77
+    txt_reduce: 'mean' # mean, attn
+    use_ee_pose: True
+    use_step_id: False
+
+    max_steps: 30
+    
+    reduce: 'max' # max, mean, attn, multiscale_max
+    max_traj_len: 1 # predicted trajectory len
+    dim_actions: 8  # (xyz, quaternion, openness)
+    pos_pred_type: 'heatmap_mlp'  # heatmap_mlp, regression, regression_delta, heatmap_disc
+    pos_heatmap_temp: 0.1
+    rot_pred_type: 'euler'     # quat, rot6d, euler, euler_delta, euler_disc
+
+    dropout: 0.1
+
+    pos_bins: 40
+    pos_bin_size: 0.01
+    best_disc_pos: max # max, ens1
+
+  loss_config:
+    pos_weight: 1
+    rot_weight: 1

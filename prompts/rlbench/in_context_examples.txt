@@ -1,0 +1,778 @@
+# taskvar: push_button+0
+# query: push the maroon button.
+# objects = ["maroon button"]
+button = push_down(object="maroon button")
+# done
+
+# taskvar: push_button+3
+# query: push down the navy button.
+# objects = ["navy button"]
+button = push_down(object="navy button")
+# done
+
+# taskvar: push_button+4
+# query: press the button with the yellow base.
+# objects = ["yellow button"]
+button = push_down(object="yellow button")
+# done
+
+# taskvar: close_fridge+0
+# query: close fridge.
+# objects = ["fridge"]
+fridge_door = push_forward(object="fridge door")
+# done
+
+# taskvar: close_laptop_lid+0
+# query: close laptop lid.
+# objects = ["laptop"]
+laptop_lid = grasp(object="laptop lid")
+laptop_lid = move_grasped_object(target="down")
+release()
+# done
+
+# taskvar: close_microwave+0
+# query: close microwave.
+# objects = ["microwave"]
+microwave_door = push_forward(object="microwave door")
+# done
+
+# taskvar: open_door+0
+# query: open the door.
+# objects = ["door"]
+door_handle = grasp(object="door handle")
+door_handle = rotate_grasped_object()
+door_handle = push_forward(object=door_handle)
+# done
+
+# taskvar: open_box+0
+# query: open box.
+# objects = ["box"]
+box_lid = grasp(object="box lid")
+box_lid = move_grasped_object(target="up")
+release()
+# done
+
+# taskvar: open_drawer+0
+# query: open bottom drawer.
+# objects = ["drawer"]
+bottom_handle = grasp(object="bottom drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: open_drawer+2
+# query: grip the top handle and pull the top drawer open.
+# objects = ["drawer"]
+bottom_handle = grasp(object="top drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: pick_and_lift+0
+# query: pick up the red block and lift it up to the target.
+# objects = ["red ball", "red cube", "cyan cube", "violet cube"]
+red_cube = grasp(object="red cube")
+red_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift+2
+# query: grasp the lime block to the target.
+# objects = ["red ball", "cyan cube", "white cube", "lime cube"]
+lime_cube = grasp(object="lime cube")
+lime_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift+7
+# query: lift the cyan block up to the target.
+# objects = ["red ball", "cyan cube", "green cube", "silver cube"]
+cyan_cube = grasp(object="cyan cube")
+cyan_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_up_cup+8
+# query: pick up the magenta cup.
+# objects = ["magenta cup", "green cup"]
+magenta_cup = grasp(object="megenta cup")
+magenta_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: pick_up_cup+9
+# query: grasp the silver cup and lift it.
+# objects = ["red cup", "silver cup"]
+silver_cup = grasp(object="silver cup")
+silver_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: pick_up_cup+11
+# query: lift the orange cup.
+# objects = ["orange cup", "lime cup"]
+orange_cup = grasp(object="orange cup")
+orange_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: stack_blocks+30
+# query: stack 2 gray blocks.
+# objects = ["green square", "gray cube", "gray cube", "gray cube", "gray cube", "blue cube", "blue cube", "blue cube", "blue cube"]
+gray_cube_1 = grasp(object="gray cube")
+gray_cube_1 = move_grasped_object(target="green square")
+release()
+gray_cube_2 = grasp(object="gray cube", not=[gray_cube_1])
+gray_cube_2 = move_grasped_object(target=gray_cube_1)
+release()
+# done
+
+# taskvar: stack_blocks+36
+# query: place 2 of the olive cubes on top of each other.
+# objects = ["green square", "olive cube", "olive cube", "olive cube", "olive cube", "red cube", "red cube", "red cube", "red cube"]
+olive_cube_1 = grasp(object="olive cube")
+olive_cube_1 = move_grasped_object(target="green square")
+release()
+olive_cube_2 = grasp(object="olive cube", not=[olive_cube_1])
+olive_cube_2 = move_grasped_object(target=olive_cube_1)
+release()
+# done
+
+# taskvar: stack_blocks+39
+# query: pick up and set down 2 purple blocks on top of each other.
+# objects = ["green square", "purple cube", "purple cube", "purple cube", "purple cube", "gray cube", "gray cube", "gray cube", "gray cube"]
+purple_cube_1 = grasp(object="purple cube")
+purple_cube_1 = move_grasped_object(target="green square")
+release()
+purple_cube_2 = grasp(object="purple cube", not=[purple_cube_1])
+purple_cube_2 = move_grasped_object(target=purple_cube_1)
+release()
+# done
+
+# taskvar: put_groceries_in_cupboard+0
+# query: put the crackers box in the cupboard.
+# objects = ["chocolate jello box", "strawberry jello box", "soup can", "tuna can", "spam can", "sugar box", "coffee can", "mustard bottle", "crackers box", "cupboard"]
+crackers_box = grasp(object="crakers box")
+crackers_box = move_grasped_object(target="cupboard")
+release()
+# done
+
+# taskvar: put_groceries_in_cupboard+3
+# query: pick up the soup can and place it in the cupboard.
+# objects = ["chocolate jello box", "strawberry jello box", "soup can", "tuna can", "spam can", "sugar box", "coffee can", "mustard bottle", "crackers box", "cupboard"]
+soup_can = grasp(object="soup can")
+soup_can = move_grasped_object(target="cupboard")
+release()
+# done
+
+# taskvar: put_money_in_safe+0
+# query: put the money away in the safe on the bottom shelf.
+# objects = ["money", "shelf"]
+money = grasp(object="money")
+money = move_grasped_object(target="bottom shelf")
+release()
+# done
+
+# taskvar: put_money_in_safe+1
+# query: leave the money on the middle shelf on the safe.
+# objects = ["money", "shelf"]
+money = grasp(object="money")
+money = move_grasped_object(target="middle shelf")
+release()
+# done
+
+# taskvar: slide_block_to_color_target_peract+0
+# query: push the block until it is sitting on top of the green target.
+# objects = ["red cube", "green square", "blue square", "pink square", "yellow square"]
+cube = push_forward(object="red cube", target="green square")
+# done
+
+# taskvar: slide_block_to_color_target_peract+1
+# query: slide the block onto the blue square.
+# objects = ["red cube", "green square", "blue square", "pink square", "yellow square"]
+cube = push_forward(object="red cube", target="blue square")
+# done
+
+# taskvar: reach_and_drag_peract+14
+# query: use the stick to drag the cube onto the teal target.
+# objects = ["gray cube", "stick", "green square", "teal square", "pink square", "yellow square"]
+stick = grasp(object="stick")
+cube = push_forward(object="gray cube", target="teal square")
+# done
+
+# taskvar: reach_and_drag_peract+18
+# query: pick up the stick and use it to push or pull the cube onto the black target.
+# objects = ["gray cube", "stick", "green square", "teal square", "pink square", "black square"]
+stick = grasp(object="stick")
+cube = push_forward(object="gray cube", target="black square")
+# done
+
+# taskvar: close_jar_peract+15
+# query: grasping the lid, lift it from the table and use it to seal the azure jar.
+# objects = ["gray lid", "azure jar", "maroon jar"]
+lid = grasp(object="gray lid")
+lid = move_grasped_object(target="azure jar")
+lid = rotate_grasped_object()
+release()
+# done
+
+# taskvar: close_jar_peract+16
+# query: screw on the violet jar lid.
+# objects = ["gray lid", "violet jar", "maroon jar"]
+lid = grasp(object="gray lid")
+lid = move_grasped_object(target="violet jar")
+lid = rotate_grasped_object()
+release()
+# done
+
+# taskvar: light_bulb_in_peract+17
+# query: pick up the light bulb from the rose stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion.
+# objects = ["brown lamp", "rose light bulb", "green light bulb"]
+bulb = grasp(object="rose light bulb")
+bulb = move_grasped_object(target="brown lamp")
+bulb = rotate_grasped_object()
+release()
+# done
+
+# taskvar: light_bulb_in_peract+19
+# query: screw in the white light bulb.
+# objects = ["brown lamp", "while light bulb", "olive light bulb"]
+bulb = grasp(object="white light bulb")
+bulb = move_grasped_object(target="brown lamp")
+bulb = rotate_grasped_object()
+release()
+# done
+
+# taskvar: push_button+13
+# query: push the azure button.
+# objects = ["azure button"]
+button = push_down(object="azure button")
+# done
+
+# taskvar: push_button+15
+# query: push the rose button.
+# objects = ["rose button"]
+button = push_down(object="rose button")
+# done
+
+# taskvar: push_button+17
+# query: push the white button.
+# objects = ["white button"]
+button = push_down(object="white button")
+# done
+
+# taskvar: open_drawer+1
+# query: open middle drawer.
+# objects = ["drawer"]
+middle_handle = grasp(object="middle drawer handle")
+middle_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: pick_and_lift+14
+# query: pick up the teal block and lift it up to the target.
+# objects = ["red ball", "teal cube", "gray cube", "white cube"]
+teal_cube = grasp(object="teal cube")
+teal_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift+16
+# query: grasp the violet block to the target.
+# objects = ["red ball", "blue cube", "violet cube", "lime cube"]
+violet_cube = grasp(object="violet cube")
+violet_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift+18
+# query: lift the black block up to the target.
+# objects = ["red ball", "yellow cube", "green cube", "black cube"]
+black_cube = grasp(object="black cube")
+black_cube = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_up_cup+10
+# query: pick up the gray cup.
+# objects = ["gray cup", "green cup"]
+gray_cup = grasp(object="gray cup")
+gray_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: pick_up_cup+12
+# query: grasp the silver cup and lift it.
+# objects = ["red cup", "olive cup"]
+olive_cup = grasp(object="olive cup")
+olive_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: pick_up_cup+13
+# query: lift the purple cup.
+# objects = ["purple cup", "lime cup"]
+purple_cup = grasp(object="purple cup")
+purple_cup = move_grasped_object(target="up")
+# done
+
+# taskvar: stack_blocks+24
+# query: stack 2 magenta blocks.
+# objects = ["green square", "magenta cube", "magenta cube", "magenta cube", "magenta cube", "blue cube", "blue cube", "blue cube", "blue cube"]
+magenta_cube_1 = grasp(object="magenta cube")
+magenta_cube_1 = move_grasped_object(target="green square")
+release()
+magenta_cube_2 = grasp(object="magenta cube", not=[magenta_cube_1])
+magenta_cube_2 = move_grasped_object(target=magenta_cube_1)
+release()
+# done
+
+# taskvar: stack_blocks+27
+# query: place 2 of the silver cubes on top of each other.
+# objects = ["green square", "silver cube", "silver cube", "silver cube", "silver cube", "red cube", "red cube", "red cube", "red cube"]
+silver_cube_1 = grasp(object="silver cube")
+silver_cube_1 = move_grasped_object(target="green square")
+release()
+silver_cube_2 = grasp(object="silver cube", not=[silver_cube_1])
+silver_cube_2 = move_grasped_object(target=silver_cube_1)
+release()
+# done
+
+# taskvar: stack_blocks+33
+# query: pick up and set down 2 orange blocks on top of each other.
+# objects = ["green square", "orange cube", "orange cube", "orange cube", "orange cube", "gray cube", "gray cube", "gray cube", "gray cube"]
+orange_cube_1 = grasp(object="orange cube")
+orange_cube_1 = move_grasped_object(target="green square")
+release()
+orange_cube_2 = grasp(object="orange cube", not=[orange_cube_1])
+orange_cube_2 = move_grasped_object(target=orange_cube_1)
+release()
+# done
+
+# taskvar: put_money_in_safe+2
+# query: put the money away in the safe on the top shelf.
+# objects = ["money", "shelf"]
+money = grasp(object="money")
+money = move_grasped_object(target="top shelf")
+release()
+# done
+
+# taskvar: slide_block_to_color_target_peract+2
+# query: push the block until it is sitting on top of the pink target.
+# objects = ["red cube", "green square", "blue square", "pink square", "yellow square"]
+cube = push_forward(object="red cube", target="pink square")
+# done
+
+# taskvar: slide_block_to_color_target_peract+3
+# query: slide the block onto the yellow square.
+# objects = ["red cube", "green square", "blue square", "pink square", "yellow square"]
+cube = push_forward(object="red cube", target="yellow square")
+# done
+
+# taskvar: reach_and_drag_peract+5
+# query: use the stick to drag the cube onto the navy target.
+# objects = ["gray cube", "stick", "green square", "navy square", "pink square", "yellow square"]
+stick = grasp(object="stick")
+cube = push_forward(object="gray cube", target="navy square")
+# done
+
+# taskvar: reach_and_drag_peract+7
+# query: pick up the stick and use it to push or pull the cube onto the cyan target.
+# objects = ["gray cube", "stick", "cyan square", "teal square", "pink square", "black square"]
+stick = grasp(object="stick")
+cube = push_forward(object="gray cube", target="cyan square")
+# done
+
+# taskvar: close_jar_peract+3
+# query: grasping the lid, lift it from the table and use it to seal the green jar.
+# objects = ["gray lid", "green jar", "maroon jar"]
+lid = grasp(object="gray lid")
+lid = move_grasped_object(target="green jar")
+lid = rotate_grasped_object()
+release()
+# done
+
+# taskvar: close_jar_peract+4
+# query: screw on the blue jar lid.
+# objects = ["gray lid", "blue jar", "maroon jar"]
+lid = grasp(object="gray lid")
+lid = move_grasped_object(target="blue jar")
+lid = rotate_grasped_object()
+release()
+# done
+
+# taskvar: light_bulb_in_peract+1
+# query: pick up the light bulb from the maroon stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion.
+# objects = ["brown lamp", "maroon light bulb", "green light bulb"]
+bulb = grasp(object="maroon light bulb")
+bulb = move_grasped_object(target="brown lamp")
+bulb = rotate_grasped_object()
+release()
+# done
+
+# taskvar: light_bulb_in_peract+2
+# query: screw in the lime light bulb.
+# objects = ["brown lamp", "lime light bulb", "olive light bulb"]
+bulb = grasp(object="lime light bulb")
+bulb = move_grasped_object(target="brown lamp")
+bulb = rotate_grasped_object()
+release()
+# done
+
+# taskvar: put_groceries_in_cupboard+7
+# query: put the mustard bottle in the cupboard.
+# objects = ["chocolate jello box", "strawberry jello box", "soup can", "tuna can", "spam can", "sugar box", "coffee can", "mustard bottle", "crackers box", "cupboard"]
+mustard_bottle = grasp(object="mustard bottle")
+mustard_bottle = move_grasped_object(target="cupboard")
+release()
+# done
+
+# taskvar: put_groceries_in_cupboard+8
+# query: pick up the sugar box and place it in the cupboard.
+# objects = ["chocolate jello box", "strawberry jello box", "soup can", "tuna can", "spam can", "sugar box", "coffee can", "mustard bottle", "crackers box", "cupboard"]
+sugar_box = grasp(object="sugar box")
+sugar_box = move_grasped_object(target="cupboard")
+release()
+# done
+
+# taskvar: put_cube_in_safe+0
+# query: put the cube away in the safe on the bottom shelf.
+# objects = ["cube", "shelf"]
+cube = grasp(object="cube")
+cube = move_grasped_object(target="bottom shelf")
+release()
+# done
+
+# taskvar: lamp_on+0
+# query: turn on the light.
+# objects = ["lamp", "green button"]
+button = push_down(object="green button")
+# done
+
+# taskvar: pick_and_lift_cylinder+0
+# query: pick up the red cylinder and lift it up to the target.
+# objects = ["red ball", "red cylinder", "cyan cylinder", "violet cylinder"]
+red_cylinder = grasp(object="red cylinder")
+red_cylinder = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift_star+0
+# query: pick up the red star and lift it up to the target.
+# objects = ["red ball", "red star", "cyan star", "violet star"]
+red_star = grasp(object="red star")
+red_star = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift_moon+0
+# query: pick up the red moon and lift it up to the target.
+# objects = ["red ball", "red moon", "cyan moon", "violet moon"]
+red_moon = grasp(object="red moon")
+red_moon = move_grasped_object(target="red ball")
+# done
+
+# taskvar: pick_and_lift_toy+0
+# query: pick up the red rubber duck and lift it up to the target.
+# objects = ["red ball", "red rubber duck", "cyan rubber duck", "violet rubber duck"]
+red_rubber_duck = grasp(object="red rubber duck")
+red_rubber_duck = move_grasped_object(target="red ball")
+# done
+
+# taskvar: close_fridge2+0
+# query: close fridge.
+# objects = ["fridge"]
+fridge_door = push_forward(object="fridge door")
+# done
+
+# taskvar: close_laptop_lid2+0
+# query: close laptop lid.
+# objects = ["laptop"]
+laptop_lid = grasp(object="laptop lid")
+laptop_lid = move_grasped_object(target="down")
+release()
+# done
+
+# taskvar: close_microwave2+0
+# query: close microwave.
+# objects = ["microwave"]
+microwave_door = push_forward(object="microwave door")
+# done
+
+# taskvar: open_door2+0
+# query: open the door.
+# objects = ["door"]
+door_handle = grasp(object="door handle")
+door_handle = rotate_grasped_object()
+door_handle = push_forward(object=door_handle)
+# done
+
+# taskvar: open_box2+0
+# query: open box.
+# objects = ["box"]
+box_lid = grasp(object="box lid")
+box_lid = move_grasped_object(target="up")
+release()
+# done
+
+# taskvar: open_drawer2+0
+# query: open bottom drawer.
+# objects = ["drawer"]
+bottom_handle = grasp(object="bottom drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: open_drawer3+0
+# query: open bottom drawer.
+# objects = ["drawer"]
+bottom_handle = grasp(object="bottom drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: close_door+0
+# query: close the door.
+# objects = ["door"]
+door_handle = grasp(object="door handle")
+door_handle = move_grasped_object(target="out")
+# done
+
+# taskvar: close_box+0
+# query: close box.
+# objects = ["box"]
+box_lid = grasp(object="box lid")
+box_lid = move_grasped_object(target="down")
+release()
+# done
+
+# taskvar: open_drawer_long+0
+# query: open bottom drawer.
+# objects = ["drawer"]
+bottom_handle = grasp(object="bottom drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: open_drawer_long+1
+# query: grip the middle bottom handle and pull the middle bottom drawer open.
+# objects = ["drawer"]
+middle_bottom_handle = grasp(object="middle bottom drawer handle")
+middle_bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: open_drawer_long+2
+# query: grip the middle top handle and pull the middle top drawer open.
+# objects = ["drawer"]
+middle_top_handle = grasp(object="middle top drawer handle")
+middle_top_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: open_drawer_long+3
+# query: grip the top handle and pull the top drawer open.
+# objects = ["drawer"]
+bottom_handle = grasp(object="top drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: toilet_seat_up+0
+# query: lift toilet seat up.
+# objects = ["toilet lid"]
+toilet_lid = grasp(object="toilet lid")
+toilet_lid = move_grasped_object(target="up")
+release()
+# done
+
+# taskvar: open_fridge+0
+# query: open fridge.
+# objects = ["fridge"]
+door_handle = grasp(object="top fridge door handle")
+door_handle = move_grasped_object(target="out")
+# done
+
+# taskvar: open_laptop_lid+0
+# query: open laptop lid.
+# objects = ["laptop"]
+laptop_lid = grasp(object="laptop lid")
+laptop_lid = move_grasped_object(target="up")
+# done
+
+# taskvar: open_microwave+0
+# query: open microwave.
+# objects = ["microwave"]
+door_handle = grasp(object="microwave door handle")
+door_handle = move_grasped_object(target="out")
+# done
+
+# taskvar: close_drawer+0
+# query: close bottom drawer.
+# objects = ["drawer"]
+bottom_drawer = push_forward(object="bottom drawer")
+# done
+
+# taskvar: close_grill+0
+# query: close the grill.
+# objects = ["grill"]
+grill_handle = grasp(object="grill handle")
+grill_handle = move_grasped_object(target="down")
+release()
+# done
+
+# taskvar: push_buttons4+1
+# query: push the navy button, then push the teal button.
+# objects = ["navy button", "teal button", "purple button", "gray button"]
+navy_button = push_down(object="navy button")
+teal_button = push_down(object="teal button")
+# done
+
+# taskvar: push_buttons4+2
+# query: push the green button, then push the yellow button, then push the rose button.
+# objects = ["purple button", "green button", "yellow button", "rose button"]
+green_button = push_down(object="green button")
+yellow_button = push_down(object="yellow button")
+rose_button = push_down(object="rose button")
+# done
+
+# taskvar: push_buttons4+3
+# query: push the maroon button, then push the blue button, then push the orange button, then push the magenta button.
+# objects = ["maroon button", "blue button", "orange button", "magenta button"]
+maroon_button = push_down(object="maroon button")
+blue_button = push_down(object="blue button")
+orange_button = push_down(object="orange button")
+magenta_button = push_down(object="magenta button")
+# done
+
+# taskvar: put_all_groceries_in_cupboard+0
+# query: put all of the groceries in the cupboard.
+# objects = ["chocolate jello box", "strawberry jello box", "tomato soup can", "tuna fish can", "sugar box", "mustard bottle", "crackers box", "cupboard"]
+crackers_box = grasp(object="crakers box")
+crackers_box = move_grasped_object(target="cupboard")
+release()
+chocolate_jello = grasp(object="chocolate jello")
+chocolate_jello = move_grasped_object(target="cupboard")
+release()
+strawberry_jello = grasp(object="strawberry jello")
+strawberry_jello = move_grasped_object(target="cupboard")
+release()
+tomato_soup_can = grasp(object="tomato soup can")
+tomato_soup_can = move_grasped_object(target="cupboard")
+release()
+tuna_fish_can = grasp(object="tuna fish can")
+tuna_fish_can = move_grasped_object(target="cupboard")
+release()
+mustard_bottle = grasp(object="mustard bottle")
+mustard_bottle = move_grasped_object(target="cupboard")
+release()
+sugar_box = grasp(object="sugar box")
+sugar_box = move_grasped_object(target="cupboard")
+release()
+# done
+
+# taskvar: put_items_in_drawer+0
+# query: put the block in the bottom drawer, then the cylinder and then the moon.
+# objects = ["drawer", "gray cube", "gray cylinder", "gray moon"]
+bottom_handle = grasp(object="bottom drawer handle")
+bottom_handle = move_grasped_object(target="out")
+release()
+cube = grasp(object="gray cube")
+cube = move_grasped_object(target="bottom drawer")
+release()
+cylinder = grasp(object="gray cylinder")
+cylinder = move_grasped_object(target="bottom drawer")
+release()
+moon = grasp(object="gray moon")
+moon = move_grasped_object(target="bottom drawer")
+release()
+# done
+
+# taskvar: put_items_in_drawer+2
+# query: put the block in the top drawer, then the cylinder and then the moon.
+# objects = ["drawer", "gray cube", "gray cylinder", "gray moon"]
+top_handle = grasp(object="top drawer handle")
+top_handle = move_grasped_object(target="out")
+release()
+cube = grasp(object="gray cube")
+cube = move_grasped_object(target="top drawer")
+release()
+cylinder = grasp(object="gray cylinder")
+cylinder = move_grasped_object(target="top drawer")
+release()
+moon = grasp(object="gray moon")
+moon = move_grasped_object(target="top drawer")
+release()
+# done
+
+# taskvar: put_items_in_drawer+4
+# query: put the block in the middle drawer, then the moon and then the cylinder.
+# objects = ["drawer", "gray cube", "gray cylinder", "gray moon"]
+middle_handle = grasp(object="middle drawer handle")
+middle_handle = move_grasped_object(target="out")
+release()
+cube = grasp(object="gray cube")
+cube = move_grasped_object(target="middle drawer")
+release()
+moon = grasp(object="gray moon")
+moon = move_grasped_object(target="middle drawer")
+release()
+cylinder = grasp(object="gray cylinder")
+cylinder = move_grasped_object(target="middle drawer")
+release()
+# done
+
+# taskvar: stack_cups+0
+# query: stack the other cups on top of the red cup.
+# objects = ["red cup", "yellow cup", "blue cup"]
+yellow_cup = grasp(object="yellow cup")
+yellow_cup = move_grasped_object(target="red cup")
+release()
+blue_cup = grasp(object="blue cup")
+blue_cup = move_grasped_object(target=yellow_cup)
+release()
+# done
+
+# taskvar: stack_cups+3
+# query: stack the other cups on top of the green cup.
+# objects = ["green cup", "yellow cup", "blue cup"]
+yellow_cup = grasp(object="yellow cup")
+yellow_cup = move_grasped_object(target="green cup")
+release()
+blue_cup = grasp(object="blue cup")
+blue_cup = move_grasped_object(target=yellow_cup)
+release()
+# done
+
+# taskvar: take_shoes_out_of_box+0
+# query: take shoes out of box.
+# objects = ["box"]
+box_lid = grasp(object="box lid")
+box_lid = move_grasped_object(target="up")
+release()
+shoe_1 = grasp(object="shoe")
+shoe_1 = move_grasped_object(target="out")
+release()
+shoe_2 = grasp(object="shoe")
+shoe_2 = move_grasped_object(target="out")
+release()
+# done
+
+# taskvar: tower4+1
+# query: first place the orange block. Then stack the gray block on top of it and stack the lime block on top of it. Then place the rose block on top of the lime one.
+# objects = ["green square", "gray cube", "rose cube", "lime cube", "orange cube"]
+orange_cube = grasp(object="orange cube")
+orange_cube = move_grasped_object(target="green square")
+release()
+gray_cube = grasp(object="gray cube")
+gray_cube = move_grasped_object(target=orange_cube)
+release()
+lime_cube = grasp(object="lime cube")
+lime_cube = move_grasped_object(target=gray_cube)
+release()
+rose_cube = grasp(object="rose cube")
+rose_cube = move_grasped_object(target=lime_cube)
+release()
+# done
+
+# taskvar: tower4+3
+# query: pick up and set down the white block place the teal block on top of the white one stack the blue block on top of it.
+# objects = ["green square", "white cube", "teal cube", "blue cube", "orange cube"]
+white_cube = grasp(object="white cube")
+white_cube = move_grasped_object(target="green square")
+release()
+teal_cube = grasp(object="teal cube")
+teal_cube = move_grasped_object(target=white_cube)
+release()
+blue_cube = grasp(object="blue cube")
+blue_cube = move_grasped_object(target=teal_cube)
+release()
+# done
+

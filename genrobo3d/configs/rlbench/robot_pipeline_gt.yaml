@@ -1,0 +1,24 @@
+pipeline:
+    restart: True
+    real_robot: False
+
+llm_planner:
+    use_groundtruth: True
+    gt_plan_file: 'prompts/rlbench/in_context_examples.txt'
+    taskvar_instr_file: 'assets/taskvars_instructions_new.json'
+
+object_grounding:
+    use_groundtruth: True
+    gt_label_file: 'assets/taskvars_target_label_zrange.json'
+
+motion_planner:
+    expr_dir: 'data/experiments_icra25/gembench/motion_planner_ptv3/all-v1'
+    ckpt_step: 150000
+    run_action_step: 1 
+    pc_label_type: coarse
+
+    # automatically setup
+    checkpoint: ''
+    config_file: ''
+    pred_dir: ''
+    save_obs_outs: False

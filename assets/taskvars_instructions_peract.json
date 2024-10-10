@@ -1,0 +1,1583 @@
+{
+  "close_jar_peract+0": [
+    "close the red jar",
+    "screw on the red jar lid",
+    "grasping the lid, lift it from the table and use it to seal the red jar",
+    "pick up the lid from the table and put it on the red jar"
+  ],
+  "close_jar_peract+1": [
+    "close the maroon jar",
+    "screw on the maroon jar lid",
+    "grasping the lid, lift it from the table and use it to seal the maroon jar",
+    "pick up the lid from the table and put it on the maroon jar"
+  ],
+  "close_jar_peract+2": [
+    "close the lime jar",
+    "screw on the lime jar lid",
+    "grasping the lid, lift it from the table and use it to seal the lime jar",
+    "pick up the lid from the table and put it on the lime jar"
+  ],
+  "close_jar_peract+3": [
+    "close the green jar",
+    "screw on the green jar lid",
+    "grasping the lid, lift it from the table and use it to seal the green jar",
+    "pick up the lid from the table and put it on the green jar"
+  ],
+  "close_jar_peract+4": [
+    "close the blue jar",
+    "screw on the blue jar lid",
+    "grasping the lid, lift it from the table and use it to seal the blue jar",
+    "pick up the lid from the table and put it on the blue jar"
+  ],
+  "close_jar_peract+5": [
+    "close the navy jar",
+    "screw on the navy jar lid",
+    "grasping the lid, lift it from the table and use it to seal the navy jar",
+    "pick up the lid from the table and put it on the navy jar"
+  ],
+  "close_jar_peract+6": [
+    "close the yellow jar",
+    "screw on the yellow jar lid",
+    "grasping the lid, lift it from the table and use it to seal the yellow jar",
+    "pick up the lid from the table and put it on the yellow jar"
+  ],
+  "close_jar_peract+7": [
+    "close the cyan jar",
+    "screw on the cyan jar lid",
+    "grasping the lid, lift it from the table and use it to seal the cyan jar",
+    "pick up the lid from the table and put it on the cyan jar"
+  ],
+  "close_jar_peract+8": [
+    "close the magenta jar",
+    "screw on the magenta jar lid",
+    "grasping the lid, lift it from the table and use it to seal the magenta jar",
+    "pick up the lid from the table and put it on the magenta jar"
+  ],
+  "close_jar_peract+9": [
+    "close the silver jar",
+    "screw on the silver jar lid",
+    "grasping the lid, lift it from the table and use it to seal the silver jar",
+    "pick up the lid from the table and put it on the silver jar"
+  ],
+  "close_jar_peract+10": [
+    "close the gray jar",
+    "screw on the gray jar lid",
+    "grasping the lid, lift it from the table and use it to seal the gray jar",
+    "pick up the lid from the table and put it on the gray jar"
+  ],
+  "close_jar_peract+11": [
+    "close the orange jar",
+    "screw on the orange jar lid",
+    "grasping the lid, lift it from the table and use it to seal the orange jar",
+    "pick up the lid from the table and put it on the orange jar"
+  ],
+  "close_jar_peract+12": [
+    "close the olive jar",
+    "screw on the olive jar lid",
+    "grasping the lid, lift it from the table and use it to seal the olive jar",
+    "pick up the lid from the table and put it on the olive jar"
+  ],
+  "close_jar_peract+13": [
+    "close the purple jar",
+    "screw on the purple jar lid",
+    "grasping the lid, lift it from the table and use it to seal the purple jar",
+    "pick up the lid from the table and put it on the purple jar"
+  ],
+  "close_jar_peract+14": [
+    "close the teal jar",
+    "screw on the teal jar lid",
+    "grasping the lid, lift it from the table and use it to seal the teal jar",
+    "pick up the lid from the table and put it on the teal jar"
+  ],
+  "close_jar_peract+15": [
+    "close the azure jar",
+    "screw on the azure jar lid",
+    "grasping the lid, lift it from the table and use it to seal the azure jar",
+    "pick up the lid from the table and put it on the azure jar"
+  ],
+  "close_jar_peract+16": [
+    "close the violet jar",
+    "screw on the violet jar lid",
+    "grasping the lid, lift it from the table and use it to seal the violet jar",
+    "pick up the lid from the table and put it on the violet jar"
+  ],
+  "close_jar_peract+17": [
+    "close the rose jar",
+    "screw on the rose jar lid",
+    "grasping the lid, lift it from the table and use it to seal the rose jar",
+    "pick up the lid from the table and put it on the rose jar"
+  ],
+  "close_jar_peract+18": [
+    "close the black jar",
+    "screw on the black jar lid",
+    "grasping the lid, lift it from the table and use it to seal the black jar",
+    "pick up the lid from the table and put it on the black jar"
+  ],
+  "close_jar_peract+19": [
+    "close the white jar",
+    "screw on the white jar lid",
+    "grasping the lid, lift it from the table and use it to seal the white jar",
+    "pick up the lid from the table and put it on the white jar"
+  ],
+  "insert_onto_square_peg_peract+0": [
+    "put the ring on the red spoke",
+    "slide the ring onto the red colored spoke",
+    "place the ring onto the red spoke"
+  ],
+  "insert_onto_square_peg_peract+1": [
+    "put the ring on the maroon spoke",
+    "slide the ring onto the maroon colored spoke",
+    "place the ring onto the maroon spoke"
+  ],
+  "insert_onto_square_peg_peract+2": [
+    "put the ring on the lime spoke",
+    "slide the ring onto the lime colored spoke",
+    "place the ring onto the lime spoke"
+  ],
+  "insert_onto_square_peg_peract+3": [
+    "put the ring on the green spoke",
+    "slide the ring onto the green colored spoke",
+    "place the ring onto the green spoke"
+  ],
+  "insert_onto_square_peg_peract+4": [
+    "put the ring on the blue spoke",
+    "slide the ring onto the blue colored spoke",
+    "place the ring onto the blue spoke"
+  ],
+  "insert_onto_square_peg_peract+5": [
+    "put the ring on the navy spoke",
+    "slide the ring onto the navy colored spoke",
+    "place the ring onto the navy spoke"
+  ],
+  "insert_onto_square_peg_peract+6": [
+    "put the ring on the yellow spoke",
+    "slide the ring onto the yellow colored spoke",
+    "place the ring onto the yellow spoke"
+  ],
+  "insert_onto_square_peg_peract+7": [
+    "put the ring on the cyan spoke",
+    "slide the ring onto the cyan colored spoke",
+    "place the ring onto the cyan spoke"
+  ],
+  "insert_onto_square_peg_peract+8": [
+    "put the ring on the magenta spoke",
+    "slide the ring onto the magenta colored spoke",
+    "place the ring onto the magenta spoke"
+  ],
+  "insert_onto_square_peg_peract+9": [
+    "put the ring on the silver spoke",
+    "slide the ring onto the silver colored spoke",
+    "place the ring onto the silver spoke"
+  ],
+  "insert_onto_square_peg_peract+10": [
+    "put the ring on the gray spoke",
+    "slide the ring onto the gray colored spoke",
+    "place the ring onto the gray spoke"
+  ],
+  "insert_onto_square_peg_peract+11": [
+    "put the ring on the orange spoke",
+    "slide the ring onto the orange colored spoke",
+    "place the ring onto the orange spoke"
+  ],
+  "insert_onto_square_peg_peract+12": [
+    "put the ring on the olive spoke",
+    "slide the ring onto the olive colored spoke",
+    "place the ring onto the olive spoke"
+  ],
+  "insert_onto_square_peg_peract+13": [
+    "put the ring on the purple spoke",
+    "slide the ring onto the purple colored spoke",
+    "place the ring onto the purple spoke"
+  ],
+  "insert_onto_square_peg_peract+14": [
+    "put the ring on the teal spoke",
+    "slide the ring onto the teal colored spoke",
+    "place the ring onto the teal spoke"
+  ],
+  "insert_onto_square_peg_peract+15": [
+    "put the ring on the azure spoke",
+    "slide the ring onto the azure colored spoke",
+    "place the ring onto the azure spoke"
+  ],
+  "insert_onto_square_peg_peract+16": [
+    "put the ring on the violet spoke",
+    "slide the ring onto the violet colored spoke",
+    "place the ring onto the violet spoke"
+  ],
+  "insert_onto_square_peg_peract+17": [
+    "put the ring on the rose spoke",
+    "slide the ring onto the rose colored spoke",
+    "place the ring onto the rose spoke"
+  ],
+  "insert_onto_square_peg_peract+18": [
+    "put the ring on the black spoke",
+    "slide the ring onto the black colored spoke",
+    "place the ring onto the black spoke"
+  ],
+  "insert_onto_square_peg_peract+19": [
+    "put the ring on the white spoke",
+    "slide the ring onto the white colored spoke",
+    "place the ring onto the white spoke"
+  ],
+  "light_bulb_in_peract+0": [
+    "screw in the red light bulb",
+    "screw the light bulb from the red holder into the lamp",
+    "pick up the light bulb from the red stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the red casing into the lamp"
+  ],
+  "light_bulb_in_peract+1": [
+    "screw in the maroon light bulb",
+    "screw the light bulb from the maroon holder into the lamp",
+    "pick up the light bulb from the maroon stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the maroon casing into the lamp"
+  ],
+  "light_bulb_in_peract+2": [
+    "screw in the lime light bulb",
+    "screw the light bulb from the lime holder into the lamp",
+    "pick up the light bulb from the lime stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the lime casing into the lamp"
+  ],
+  "light_bulb_in_peract+3": [
+    "screw in the green light bulb",
+    "screw the light bulb from the green holder into the lamp",
+    "pick up the light bulb from the green stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the green casing into the lamp"
+  ],
+  "light_bulb_in_peract+4": [
+    "screw in the blue light bulb",
+    "screw the light bulb from the blue holder into the lamp",
+    "pick up the light bulb from the blue stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the blue casing into the lamp"
+  ],
+  "light_bulb_in_peract+5": [
+    "screw in the navy light bulb",
+    "screw the light bulb from the navy holder into the lamp",
+    "pick up the light bulb from the navy stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the navy casing into the lamp"
+  ],
+  "light_bulb_in_peract+6": [
+    "screw in the yellow light bulb",
+    "screw the light bulb from the yellow holder into the lamp",
+    "pick up the light bulb from the yellow stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the yellow casing into the lamp"
+  ],
+  "light_bulb_in_peract+7": [
+    "screw in the cyan light bulb",
+    "screw the light bulb from the cyan holder into the lamp",
+    "pick up the light bulb from the cyan stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the cyan casing into the lamp"
+  ],
+  "light_bulb_in_peract+8": [
+    "screw in the magenta light bulb",
+    "screw the light bulb from the magenta holder into the lamp",
+    "pick up the light bulb from the magenta stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the magenta casing into the lamp"
+  ],
+  "light_bulb_in_peract+9": [
+    "screw in the silver light bulb",
+    "screw the light bulb from the silver holder into the lamp",
+    "pick up the light bulb from the silver stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the silver casing into the lamp"
+  ],
+  "light_bulb_in_peract+10": [
+    "screw in the gray light bulb",
+    "screw the light bulb from the gray holder into the lamp",
+    "pick up the light bulb from the gray stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the gray casing into the lamp"
+  ],
+  "light_bulb_in_peract+11": [
+    "screw in the orange light bulb",
+    "screw the light bulb from the orange holder into the lamp",
+    "pick up the light bulb from the orange stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the orange casing into the lamp"
+  ],
+  "light_bulb_in_peract+12": [
+    "screw in the olive light bulb",
+    "screw the light bulb from the olive holder into the lamp",
+    "pick up the light bulb from the olive stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the olive casing into the lamp"
+  ],
+  "light_bulb_in_peract+13": [
+    "screw in the purple light bulb",
+    "screw the light bulb from the purple holder into the lamp",
+    "pick up the light bulb from the purple stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the purple casing into the lamp"
+  ],
+  "light_bulb_in_peract+14": [
+    "screw in the teal light bulb",
+    "screw the light bulb from the teal holder into the lamp",
+    "pick up the light bulb from the teal stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the teal casing into the lamp"
+  ],
+  "light_bulb_in_peract+15": [
+    "screw in the azure light bulb",
+    "screw the light bulb from the azure holder into the lamp",
+    "pick up the light bulb from the azure stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the azure casing into the lamp"
+  ],
+  "light_bulb_in_peract+16": [
+    "screw in the violet light bulb",
+    "screw the light bulb from the violet holder into the lamp",
+    "pick up the light bulb from the violet stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the violet casing into the lamp"
+  ],
+  "light_bulb_in_peract+17": [
+    "screw in the rose light bulb",
+    "screw the light bulb from the rose holder into the lamp",
+    "pick up the light bulb from the rose stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the rose casing into the lamp"
+  ],
+  "light_bulb_in_peract+18": [
+    "screw in the black light bulb",
+    "screw the light bulb from the black holder into the lamp",
+    "pick up the light bulb from the black stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the black casing into the lamp"
+  ],
+  "light_bulb_in_peract+19": [
+    "screw in the white light bulb",
+    "screw the light bulb from the white holder into the lamp",
+    "pick up the light bulb from the white stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the white casing into the lamp"
+  ],
+  "meat_off_grill_peract+0": [
+    "take the chicken off the grill",
+    "pick up the chicken and place it next to the grill",
+    "remove the chicken from the grill and set it down to the side"
+  ],
+  "meat_off_grill_peract+1": [
+    "take the steak off the grill",
+    "pick up the steak and place it next to the grill",
+    "remove the steak from the grill and set it down to the side"
+  ],
+  "open_drawer_peract+0": [
+    "open the bottom drawer",
+    "grip the bottom handle and pull the bottom drawer open",
+    "slide the bottom drawer open"
+  ],
+  "open_drawer_peract+1": [
+    "open the middle drawer",
+    "grip the middle handle and pull the middle drawer open",
+    "slide the middle drawer open"
+  ],
+  "open_drawer_peract+2": [
+    "open the top drawer",
+    "grip the top handle and pull the top drawer open",
+    "slide the top drawer open"
+  ],
+  "place_cups_peract+0": [
+    "place 1 cup on the cup holder",
+    "pick up one cup and put it on the mug tree",
+    "move 1 mug from the table to the cup holder",
+    "pick up one cup and slide its handle onto a spoke on the mug holder"
+  ],
+  "place_cups_peract+1": [
+    "place 2 cups on the cup holder",
+    "pick up 2 cups and place them on the holder",
+    "move 2 cups from the table to the mug tree",
+    "pick up 2 mugs and slide their handles onto the cup holder spokes"
+  ],
+  "place_cups_peract+2": [
+    "place 3 cups on the cup holder",
+    "pick up 3 cups and place them on the holder",
+    "move 3 cups from the table to the mug tree",
+    "pick up 3 mugs and slide their handles onto the cup holder spokes"
+  ],
+  "place_shape_in_shape_sorter_peract+0": [
+    "put the cube in the shape sorter",
+    "pick up the cube and put it in the sorter",
+    "place the cube into its slot in the shape sorter",
+    "slot the cube into the shape sorter"
+  ],
+  "place_shape_in_shape_sorter_peract+1": [
+    "put the cylinder in the shape sorter",
+    "pick up the cylinder and put it in the sorter",
+    "place the cylinder into its slot in the shape sorter",
+    "slot the cylinder into the shape sorter"
+  ],
+  "place_shape_in_shape_sorter_peract+2": [
+    "put the triangular prism in the shape sorter",
+    "pick up the triangular prism and put it in the sorter",
+    "place the triangular prism into its slot in the shape sorter",
+    "slot the triangular prism into the shape sorter"
+  ],
+  "place_shape_in_shape_sorter_peract+3": [
+    "put the star in the shape sorter",
+    "pick up the star and put it in the sorter",
+    "place the star into its slot in the shape sorter",
+    "slot the star into the shape sorter"
+  ],
+  "place_shape_in_shape_sorter_peract+4": [
+    "put the moon in the shape sorter",
+    "pick up the moon and put it in the sorter",
+    "place the moon into its slot in the shape sorter",
+    "slot the moon into the shape sorter"
+  ],
+  "place_wine_at_rack_location_peract+0": [
+    "stack the wine bottle to the middle of the rack",
+    "slide the bottle onto the middle part of the rack",
+    "put the wine on the middle",
+    "leave the wine on the middle section of the shelf",
+    "grasp the bottle and put it away on the middle"
+  ],
+  "place_wine_at_rack_location_peract+1": [
+    "stack the wine bottle to the left of the rack",
+    "slide the bottle onto the left part of the rack",
+    "put the wine on the left",
+    "leave the wine on the left section of the shelf",
+    "grasp the bottle and put it away on the left"
+  ],
+  "place_wine_at_rack_location_peract+2": [
+    "stack the wine bottle to the right of the rack",
+    "slide the bottle onto the right part of the rack",
+    "put the wine on the right",
+    "leave the wine on the right section of the shelf",
+    "grasp the bottle and put it away on the right"
+  ],
+  "push_buttons_peract+0": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+1": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+2": [
+    "push the maroon button, then push the green button, then push the blue button",
+    "press the maroon button, then press the green button, then press the blue button",
+    "push down the button with the maroon base, then the green one, then the blue one"
+  ],
+  "push_buttons_peract+3": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+4": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+5": [
+    "push the maroon button, then push the green button, then push the navy button",
+    "press the maroon button, then press the green button, then press the navy button",
+    "push down the button with the maroon base, then the green one, then the navy one"
+  ],
+  "push_buttons_peract+6": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+7": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+8": [
+    "push the maroon button, then push the green button, then push the yellow button",
+    "press the maroon button, then press the green button, then press the yellow button",
+    "push down the button with the maroon base, then the green one, then the yellow one"
+  ],
+  "push_buttons_peract+9": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+10": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+11": [
+    "push the maroon button, then push the green button, then push the cyan button",
+    "press the maroon button, then press the green button, then press the cyan button",
+    "push down the button with the maroon base, then the green one, then the cyan one"
+  ],
+  "push_buttons_peract+12": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+13": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+14": [
+    "push the maroon button, then push the green button, then push the magenta button",
+    "press the maroon button, then press the green button, then press the magenta button",
+    "push down the button with the maroon base, then the green one, then the magenta one"
+  ],
+  "push_buttons_peract+15": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+16": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+17": [
+    "push the maroon button, then push the green button, then push the silver button",
+    "press the maroon button, then press the green button, then press the silver button",
+    "push down the button with the maroon base, then the green one, then the silver one"
+  ],
+  "push_buttons_peract+18": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+19": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+20": [
+    "push the maroon button, then push the green button, then push the gray button",
+    "press the maroon button, then press the green button, then press the gray button",
+    "push down the button with the maroon base, then the green one, then the gray one"
+  ],
+  "push_buttons_peract+21": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+22": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+23": [
+    "push the maroon button, then push the green button, then push the orange button",
+    "press the maroon button, then press the green button, then press the orange button",
+    "push down the button with the maroon base, then the green one, then the orange one"
+  ],
+  "push_buttons_peract+24": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+25": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+26": [
+    "push the maroon button, then push the green button, then push the olive button",
+    "press the maroon button, then press the green button, then press the olive button",
+    "push down the button with the maroon base, then the green one, then the olive one"
+  ],
+  "push_buttons_peract+27": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+28": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+29": [
+    "push the maroon button, then push the green button, then push the purple button",
+    "press the maroon button, then press the green button, then press the purple button",
+    "push down the button with the maroon base, then the green one, then the purple one"
+  ],
+  "push_buttons_peract+30": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+31": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+32": [
+    "push the maroon button, then push the green button, then push the teal button",
+    "press the maroon button, then press the green button, then press the teal button",
+    "push down the button with the maroon base, then the green one, then the teal one"
+  ],
+  "push_buttons_peract+33": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+34": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+35": [
+    "push the maroon button, then push the green button, then push the azure button",
+    "press the maroon button, then press the green button, then press the azure button",
+    "push down the button with the maroon base, then the green one, then the azure one"
+  ],
+  "push_buttons_peract+36": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+37": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+38": [
+    "push the maroon button, then push the green button, then push the violet button",
+    "press the maroon button, then press the green button, then press the violet button",
+    "push down the button with the maroon base, then the green one, then the violet one"
+  ],
+  "push_buttons_peract+39": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+40": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+41": [
+    "push the maroon button, then push the green button, then push the rose button",
+    "press the maroon button, then press the green button, then press the rose button",
+    "push down the button with the maroon base, then the green one, then the rose one"
+  ],
+  "push_buttons_peract+42": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+43": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+44": [
+    "push the maroon button, then push the green button, then push the black button",
+    "press the maroon button, then press the green button, then press the black button",
+    "push down the button with the maroon base, then the green one, then the black one"
+  ],
+  "push_buttons_peract+45": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+46": [
+    "push the maroon button, then push the green button",
+    "press the maroon button, then press the green button",
+    "push down the button with the maroon base, then the green one"
+  ],
+  "push_buttons_peract+47": [
+    "push the maroon button, then push the green button, then push the white button",
+    "press the maroon button, then press the green button, then press the white button",
+    "push down the button with the maroon base, then the green one, then the white one"
+  ],
+  "push_buttons_peract+48": [
+    "push the maroon button",
+    "press the maroon button",
+    "push down the button with the maroon base"
+  ],
+  "push_buttons_peract+49": [
+    "push the maroon button, then push the blue button",
+    "press the maroon button, then press the blue button",
+    "push down the button with the maroon base, then the blue one"
+  ],
+  "put_groceries_in_cupboard_peract+0": [
+    "put the crackers in the cupboard",
+    "pick up the crackers and place it in the cupboard",
+    "move the crackers to the bottom shelf",
+    "put away the crackers in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+1": [
+    "put the chocolate jello in the cupboard",
+    "pick up the chocolate jello and place it in the cupboard",
+    "move the chocolate jello to the bottom shelf",
+    "put away the chocolate jello in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+2": [
+    "put the strawberry jello in the cupboard",
+    "pick up the strawberry jello and place it in the cupboard",
+    "move the strawberry jello to the bottom shelf",
+    "put away the strawberry jello in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+3": [
+    "put the soup in the cupboard",
+    "pick up the soup and place it in the cupboard",
+    "move the soup to the bottom shelf",
+    "put away the soup in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+4": [
+    "put the tuna in the cupboard",
+    "pick up the tuna and place it in the cupboard",
+    "move the tuna to the bottom shelf",
+    "put away the tuna in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+5": [
+    "put the spam in the cupboard",
+    "pick up the spam and place it in the cupboard",
+    "move the spam to the bottom shelf",
+    "put away the spam in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+6": [
+    "put the coffee in the cupboard",
+    "pick up the coffee and place it in the cupboard",
+    "move the coffee to the bottom shelf",
+    "put away the coffee in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+7": [
+    "put the mustard in the cupboard",
+    "pick up the mustard and place it in the cupboard",
+    "move the mustard to the bottom shelf",
+    "put away the mustard in the cupboard"
+  ],
+  "put_groceries_in_cupboard_peract+8": [
+    "put the sugar in the cupboard",
+    "pick up the sugar and place it in the cupboard",
+    "move the sugar to the bottom shelf",
+    "put away the sugar in the cupboard"
+  ],
+  "put_item_in_drawer_peract+0": [
+    "put the item in the bottom drawer",
+    "put the block away in the bottom drawer",
+    "open the bottom drawer and place the block inside of it",
+    "leave the block in the bottom drawer"
+  ],
+  "put_item_in_drawer_peract+1": [
+    "put the item in the middle drawer",
+    "put the block away in the middle drawer",
+    "open the middle drawer and place the block inside of it",
+    "leave the block in the middle drawer"
+  ],
+  "put_item_in_drawer_peract+2": [
+    "put the item in the top drawer",
+    "put the block away in the top drawer",
+    "open the top drawer and place the block inside of it",
+    "leave the block in the top drawer"
+  ],
+  "put_money_in_safe_peract+0": [
+    "put the money away in the safe on the bottom shelf",
+    "leave the money on the bottom shelf on the safe",
+    "place the stack of bank notes on the bottom shelf of the safe"
+  ],
+  "put_money_in_safe_peract+1": [
+    "put the money away in the safe on the middle shelf",
+    "leave the money on the middle shelf on the safe",
+    "place the stack of bank notes on the middle shelf of the safe"
+  ],
+  "put_money_in_safe_peract+2": [
+    "put the money away in the safe on the top shelf",
+    "leave the money on the top shelf on the safe",
+    "place the stack of bank notes on the top shelf of the safe"
+  ],
+  "reach_and_drag_peract+0": [
+    "use the stick to drag the cube onto the red target",
+    "pick up the stick and use it to push or pull the cube onto the red target",
+    "drag the block towards the red square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the red target"
+  ],
+  "reach_and_drag_peract+1": [
+    "use the stick to drag the cube onto the maroon target",
+    "pick up the stick and use it to push or pull the cube onto the maroon target",
+    "drag the block towards the maroon square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the maroon target"
+  ],
+  "reach_and_drag_peract+2": [
+    "use the stick to drag the cube onto the lime target",
+    "pick up the stick and use it to push or pull the cube onto the lime target",
+    "drag the block towards the lime square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the lime target"
+  ],
+  "reach_and_drag_peract+3": [
+    "use the stick to drag the cube onto the green target",
+    "pick up the stick and use it to push or pull the cube onto the green target",
+    "drag the block towards the green square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the green target"
+  ],
+  "reach_and_drag_peract+4": [
+    "use the stick to drag the cube onto the blue target",
+    "pick up the stick and use it to push or pull the cube onto the blue target",
+    "drag the block towards the blue square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the blue target"
+  ],
+  "reach_and_drag_peract+5": [
+    "use the stick to drag the cube onto the navy target",
+    "pick up the stick and use it to push or pull the cube onto the navy target",
+    "drag the block towards the navy square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the navy target"
+  ],
+  "reach_and_drag_peract+6": [
+    "use the stick to drag the cube onto the yellow target",
+    "pick up the stick and use it to push or pull the cube onto the yellow target",
+    "drag the block towards the yellow square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the yellow target"
+  ],
+  "reach_and_drag_peract+7": [
+    "use the stick to drag the cube onto the cyan target",
+    "pick up the stick and use it to push or pull the cube onto the cyan target",
+    "drag the block towards the cyan square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the cyan target"
+  ],
+  "reach_and_drag_peract+8": [
+    "use the stick to drag the cube onto the magenta target",
+    "pick up the stick and use it to push or pull the cube onto the magenta target",
+    "drag the block towards the magenta square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the magenta target"
+  ],
+  "reach_and_drag_peract+9": [
+    "use the stick to drag the cube onto the silver target",
+    "pick up the stick and use it to push or pull the cube onto the silver target",
+    "drag the block towards the silver square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the silver target"
+  ],
+  "reach_and_drag_peract+10": [
+    "use the stick to drag the cube onto the gray target",
+    "pick up the stick and use it to push or pull the cube onto the gray target",
+    "drag the block towards the gray square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the gray target"
+  ],
+  "reach_and_drag_peract+11": [
+    "use the stick to drag the cube onto the orange target",
+    "pick up the stick and use it to push or pull the cube onto the orange target",
+    "drag the block towards the orange square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the orange target"
+  ],
+  "reach_and_drag_peract+12": [
+    "use the stick to drag the cube onto the olive target",
+    "pick up the stick and use it to push or pull the cube onto the olive target",
+    "drag the block towards the olive square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the olive target"
+  ],
+  "reach_and_drag_peract+13": [
+    "use the stick to drag the cube onto the purple target",
+    "pick up the stick and use it to push or pull the cube onto the purple target",
+    "drag the block towards the purple square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the purple target"
+  ],
+  "reach_and_drag_peract+14": [
+    "use the stick to drag the cube onto the teal target",
+    "pick up the stick and use it to push or pull the cube onto the teal target",
+    "drag the block towards the teal square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the teal target"
+  ],
+  "reach_and_drag_peract+15": [
+    "use the stick to drag the cube onto the azure target",
+    "pick up the stick and use it to push or pull the cube onto the azure target",
+    "drag the block towards the azure square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the azure target"
+  ],
+  "reach_and_drag_peract+16": [
+    "use the stick to drag the cube onto the violet target",
+    "pick up the stick and use it to push or pull the cube onto the violet target",
+    "drag the block towards the violet square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the violet target"
+  ],
+  "reach_and_drag_peract+17": [
+    "use the stick to drag the cube onto the rose target",
+    "pick up the stick and use it to push or pull the cube onto the rose target",
+    "drag the block towards the rose square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the rose target"
+  ],
+  "reach_and_drag_peract+18": [
+    "use the stick to drag the cube onto the black target",
+    "pick up the stick and use it to push or pull the cube onto the black target",
+    "drag the block towards the black square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the black target"
+  ],
+  "reach_and_drag_peract+19": [
+    "use the stick to drag the cube onto the white target",
+    "pick up the stick and use it to push or pull the cube onto the white target",
+    "drag the block towards the white square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the white target"
+  ],
+  "slide_block_to_color_target_peract+0": [
+    "slide the block to green target",
+    "slide the block onto the green square",
+    "push the block until it is sitting on top of the green target",
+    "slide the block towards the green plane",
+    "cover the green target with the block by pushing the block in its direction"
+  ],
+  "slide_block_to_color_target_peract+1": [
+    "slide the block to blue target",
+    "slide the block onto the blue square",
+    "push the block until it is sitting on top of the blue target",
+    "slide the block towards the blue plane",
+    "cover the blue target with the block by pushing the block in its direction"
+  ],
+  "slide_block_to_color_target_peract+2": [
+    "slide the block to pink target",
+    "slide the block onto the pink square",
+    "push the block until it is sitting on top of the pink target",
+    "slide the block towards the pink plane",
+    "cover the pink target with the block by pushing the block in its direction"
+  ],
+  "slide_block_to_color_target_peract+3": [
+    "slide the block to yellow target",
+    "slide the block onto the yellow square",
+    "push the block until it is sitting on top of the yellow target",
+    "slide the block towards the yellow plane",
+    "cover the yellow target with the block by pushing the block in its direction"
+  ],
+  "stack_blocks_peract+0": [
+    "stack 2 red blocks",
+    "place 2 of the red cubes on top of each other",
+    "pick up and set down 2 red blocks on top of each other",
+    "build a tall tower out of 2 red cubes",
+    "arrange 2 red blocks in a vertical stack on the table top",
+    "set 2 red cubes on top of each other"
+  ],
+  "stack_blocks_peract+1": [
+    "stack 3 red blocks",
+    "place 3 of the red cubes on top of each other",
+    "pick up and set down 3 red blocks on top of each other",
+    "build a tall tower out of 3 red cubes",
+    "arrange 3 red blocks in a vertical stack on the table top",
+    "set 3 red cubes on top of each other"
+  ],
+  "stack_blocks_peract+2": [
+    "stack 4 red blocks",
+    "place 4 of the red cubes on top of each other",
+    "pick up and set down 4 red blocks on top of each other",
+    "build a tall tower out of 4 red cubes",
+    "arrange 4 red blocks in a vertical stack on the table top",
+    "set 4 red cubes on top of each other"
+  ],
+  "stack_blocks_peract+3": [
+    "stack 2 maroon blocks",
+    "place 2 of the maroon cubes on top of each other",
+    "pick up and set down 2 maroon blocks on top of each other",
+    "build a tall tower out of 2 maroon cubes",
+    "arrange 2 maroon blocks in a vertical stack on the table top",
+    "set 2 maroon cubes on top of each other"
+  ],
+  "stack_blocks_peract+4": [
+    "stack 3 maroon blocks",
+    "place 3 of the maroon cubes on top of each other",
+    "pick up and set down 3 maroon blocks on top of each other",
+    "build a tall tower out of 3 maroon cubes",
+    "arrange 3 maroon blocks in a vertical stack on the table top",
+    "set 3 maroon cubes on top of each other"
+  ],
+  "stack_blocks_peract+5": [
+    "stack 4 maroon blocks",
+    "place 4 of the maroon cubes on top of each other",
+    "pick up and set down 4 maroon blocks on top of each other",
+    "build a tall tower out of 4 maroon cubes",
+    "arrange 4 maroon blocks in a vertical stack on the table top",
+    "set 4 maroon cubes on top of each other"
+  ],
+  "stack_blocks_peract+6": [
+    "stack 2 lime blocks",
+    "place 2 of the lime cubes on top of each other",
+    "pick up and set down 2 lime blocks on top of each other",
+    "build a tall tower out of 2 lime cubes",
+    "arrange 2 lime blocks in a vertical stack on the table top",
+    "set 2 lime cubes on top of each other"
+  ],
+  "stack_blocks_peract+7": [
+    "stack 3 lime blocks",
+    "place 3 of the lime cubes on top of each other",
+    "pick up and set down 3 lime blocks on top of each other",
+    "build a tall tower out of 3 lime cubes",
+    "arrange 3 lime blocks in a vertical stack on the table top",
+    "set 3 lime cubes on top of each other"
+  ],
+  "stack_blocks_peract+8": [
+    "stack 4 lime blocks",
+    "place 4 of the lime cubes on top of each other",
+    "pick up and set down 4 lime blocks on top of each other",
+    "build a tall tower out of 4 lime cubes",
+    "arrange 4 lime blocks in a vertical stack on the table top",
+    "set 4 lime cubes on top of each other"
+  ],
+  "stack_blocks_peract+9": [
+    "stack 2 green blocks",
+    "place 2 of the green cubes on top of each other",
+    "pick up and set down 2 green blocks on top of each other",
+    "build a tall tower out of 2 green cubes",
+    "arrange 2 green blocks in a vertical stack on the table top",
+    "set 2 green cubes on top of each other"
+  ],
+  "stack_blocks_peract+10": [
+    "stack 3 green blocks",
+    "place 3 of the green cubes on top of each other",
+    "pick up and set down 3 green blocks on top of each other",
+    "build a tall tower out of 3 green cubes",
+    "arrange 3 green blocks in a vertical stack on the table top",
+    "set 3 green cubes on top of each other"
+  ],
+  "stack_blocks_peract+11": [
+    "stack 4 green blocks",
+    "place 4 of the green cubes on top of each other",
+    "pick up and set down 4 green blocks on top of each other",
+    "build a tall tower out of 4 green cubes",
+    "arrange 4 green blocks in a vertical stack on the table top",
+    "set 4 green cubes on top of each other"
+  ],
+  "stack_blocks_peract+12": [
+    "stack 2 blue blocks",
+    "place 2 of the blue cubes on top of each other",
+    "pick up and set down 2 blue blocks on top of each other",
+    "build a tall tower out of 2 blue cubes",
+    "arrange 2 blue blocks in a vertical stack on the table top",
+    "set 2 blue cubes on top of each other"
+  ],
+  "stack_blocks_peract+13": [
+    "stack 3 blue blocks",
+    "place 3 of the blue cubes on top of each other",
+    "pick up and set down 3 blue blocks on top of each other",
+    "build a tall tower out of 3 blue cubes",
+    "arrange 3 blue blocks in a vertical stack on the table top",
+    "set 3 blue cubes on top of each other"
+  ],
+  "stack_blocks_peract+14": [
+    "stack 4 blue blocks",
+    "place 4 of the blue cubes on top of each other",
+    "pick up and set down 4 blue blocks on top of each other",
+    "build a tall tower out of 4 blue cubes",
+    "arrange 4 blue blocks in a vertical stack on the table top",
+    "set 4 blue cubes on top of each other"
+  ],
+  "stack_blocks_peract+15": [
+    "stack 2 navy blocks",
+    "place 2 of the navy cubes on top of each other",
+    "pick up and set down 2 navy blocks on top of each other",
+    "build a tall tower out of 2 navy cubes",
+    "arrange 2 navy blocks in a vertical stack on the table top",
+    "set 2 navy cubes on top of each other"
+  ],
+  "stack_blocks_peract+16": [
+    "stack 3 navy blocks",
+    "place 3 of the navy cubes on top of each other",
+    "pick up and set down 3 navy blocks on top of each other",
+    "build a tall tower out of 3 navy cubes",
+    "arrange 3 navy blocks in a vertical stack on the table top",
+    "set 3 navy cubes on top of each other"
+  ],
+  "stack_blocks_peract+17": [
+    "stack 4 navy blocks",
+    "place 4 of the navy cubes on top of each other",
+    "pick up and set down 4 navy blocks on top of each other",
+    "build a tall tower out of 4 navy cubes",
+    "arrange 4 navy blocks in a vertical stack on the table top",
+    "set 4 navy cubes on top of each other"
+  ],
+  "stack_blocks_peract+18": [
+    "stack 2 yellow blocks",
+    "place 2 of the yellow cubes on top of each other",
+    "pick up and set down 2 yellow blocks on top of each other",
+    "build a tall tower out of 2 yellow cubes",
+    "arrange 2 yellow blocks in a vertical stack on the table top",
+    "set 2 yellow cubes on top of each other"
+  ],
+  "stack_blocks_peract+19": [
+    "stack 3 yellow blocks",
+    "place 3 of the yellow cubes on top of each other",
+    "pick up and set down 3 yellow blocks on top of each other",
+    "build a tall tower out of 3 yellow cubes",
+    "arrange 3 yellow blocks in a vertical stack on the table top",
+    "set 3 yellow cubes on top of each other"
+  ],
+  "stack_blocks_peract+20": [
+    "stack 4 yellow blocks",
+    "place 4 of the yellow cubes on top of each other",
+    "pick up and set down 4 yellow blocks on top of each other",
+    "build a tall tower out of 4 yellow cubes",
+    "arrange 4 yellow blocks in a vertical stack on the table top",
+    "set 4 yellow cubes on top of each other"
+  ],
+  "stack_blocks_peract+21": [
+    "stack 2 cyan blocks",
+    "place 2 of the cyan cubes on top of each other",
+    "pick up and set down 2 cyan blocks on top of each other",
+    "build a tall tower out of 2 cyan cubes",
+    "arrange 2 cyan blocks in a vertical stack on the table top",
+    "set 2 cyan cubes on top of each other"
+  ],
+  "stack_blocks_peract+22": [
+    "stack 3 cyan blocks",
+    "place 3 of the cyan cubes on top of each other",
+    "pick up and set down 3 cyan blocks on top of each other",
+    "build a tall tower out of 3 cyan cubes",
+    "arrange 3 cyan blocks in a vertical stack on the table top",
+    "set 3 cyan cubes on top of each other"
+  ],
+  "stack_blocks_peract+23": [
+    "stack 4 cyan blocks",
+    "place 4 of the cyan cubes on top of each other",
+    "pick up and set down 4 cyan blocks on top of each other",
+    "build a tall tower out of 4 cyan cubes",
+    "arrange 4 cyan blocks in a vertical stack on the table top",
+    "set 4 cyan cubes on top of each other"
+  ],
+  "stack_blocks_peract+24": [
+    "stack 2 magenta blocks",
+    "place 2 of the magenta cubes on top of each other",
+    "pick up and set down 2 magenta blocks on top of each other",
+    "build a tall tower out of 2 magenta cubes",
+    "arrange 2 magenta blocks in a vertical stack on the table top",
+    "set 2 magenta cubes on top of each other"
+  ],
+  "stack_blocks_peract+25": [
+    "stack 3 magenta blocks",
+    "place 3 of the magenta cubes on top of each other",
+    "pick up and set down 3 magenta blocks on top of each other",
+    "build a tall tower out of 3 magenta cubes",
+    "arrange 3 magenta blocks in a vertical stack on the table top",
+    "set 3 magenta cubes on top of each other"
+  ],
+  "stack_blocks_peract+26": [
+    "stack 4 magenta blocks",
+    "place 4 of the magenta cubes on top of each other",
+    "pick up and set down 4 magenta blocks on top of each other",
+    "build a tall tower out of 4 magenta cubes",
+    "arrange 4 magenta blocks in a vertical stack on the table top",
+    "set 4 magenta cubes on top of each other"
+  ],
+  "stack_blocks_peract+27": [
+    "stack 2 silver blocks",
+    "place 2 of the silver cubes on top of each other",
+    "pick up and set down 2 silver blocks on top of each other",
+    "build a tall tower out of 2 silver cubes",
+    "arrange 2 silver blocks in a vertical stack on the table top",
+    "set 2 silver cubes on top of each other"
+  ],
+  "stack_blocks_peract+28": [
+    "stack 3 silver blocks",
+    "place 3 of the silver cubes on top of each other",
+    "pick up and set down 3 silver blocks on top of each other",
+    "build a tall tower out of 3 silver cubes",
+    "arrange 3 silver blocks in a vertical stack on the table top",
+    "set 3 silver cubes on top of each other"
+  ],
+  "stack_blocks_peract+29": [
+    "stack 4 silver blocks",
+    "place 4 of the silver cubes on top of each other",
+    "pick up and set down 4 silver blocks on top of each other",
+    "build a tall tower out of 4 silver cubes",
+    "arrange 4 silver blocks in a vertical stack on the table top",
+    "set 4 silver cubes on top of each other"
+  ],
+  "stack_blocks_peract+30": [
+    "stack 2 gray blocks",
+    "place 2 of the gray cubes on top of each other",
+    "pick up and set down 2 gray blocks on top of each other",
+    "build a tall tower out of 2 gray cubes",
+    "arrange 2 gray blocks in a vertical stack on the table top",
+    "set 2 gray cubes on top of each other"
+  ],
+  "stack_blocks_peract+31": [
+    "stack 3 gray blocks",
+    "place 3 of the gray cubes on top of each other",
+    "pick up and set down 3 gray blocks on top of each other",
+    "build a tall tower out of 3 gray cubes",
+    "arrange 3 gray blocks in a vertical stack on the table top",
+    "set 3 gray cubes on top of each other"
+  ],
+  "stack_blocks_peract+32": [
+    "stack 4 gray blocks",
+    "place 4 of the gray cubes on top of each other",
+    "pick up and set down 4 gray blocks on top of each other",
+    "build a tall tower out of 4 gray cubes",
+    "arrange 4 gray blocks in a vertical stack on the table top",
+    "set 4 gray cubes on top of each other"
+  ],
+  "stack_blocks_peract+33": [
+    "stack 2 orange blocks",
+    "place 2 of the orange cubes on top of each other",
+    "pick up and set down 2 orange blocks on top of each other",
+    "build a tall tower out of 2 orange cubes",
+    "arrange 2 orange blocks in a vertical stack on the table top",
+    "set 2 orange cubes on top of each other"
+  ],
+  "stack_blocks_peract+34": [
+    "stack 3 orange blocks",
+    "place 3 of the orange cubes on top of each other",
+    "pick up and set down 3 orange blocks on top of each other",
+    "build a tall tower out of 3 orange cubes",
+    "arrange 3 orange blocks in a vertical stack on the table top",
+    "set 3 orange cubes on top of each other"
+  ],
+  "stack_blocks_peract+35": [
+    "stack 4 orange blocks",
+    "place 4 of the orange cubes on top of each other",
+    "pick up and set down 4 orange blocks on top of each other",
+    "build a tall tower out of 4 orange cubes",
+    "arrange 4 orange blocks in a vertical stack on the table top",
+    "set 4 orange cubes on top of each other"
+  ],
+  "stack_blocks_peract+36": [
+    "stack 2 olive blocks",
+    "place 2 of the olive cubes on top of each other",
+    "pick up and set down 2 olive blocks on top of each other",
+    "build a tall tower out of 2 olive cubes",
+    "arrange 2 olive blocks in a vertical stack on the table top",
+    "set 2 olive cubes on top of each other"
+  ],
+  "stack_blocks_peract+37": [
+    "stack 3 olive blocks",
+    "place 3 of the olive cubes on top of each other",
+    "pick up and set down 3 olive blocks on top of each other",
+    "build a tall tower out of 3 olive cubes",
+    "arrange 3 olive blocks in a vertical stack on the table top",
+    "set 3 olive cubes on top of each other"
+  ],
+  "stack_blocks_peract+38": [
+    "stack 4 olive blocks",
+    "place 4 of the olive cubes on top of each other",
+    "pick up and set down 4 olive blocks on top of each other",
+    "build a tall tower out of 4 olive cubes",
+    "arrange 4 olive blocks in a vertical stack on the table top",
+    "set 4 olive cubes on top of each other"
+  ],
+  "stack_blocks_peract+39": [
+    "stack 2 purple blocks",
+    "place 2 of the purple cubes on top of each other",
+    "pick up and set down 2 purple blocks on top of each other",
+    "build a tall tower out of 2 purple cubes",
+    "arrange 2 purple blocks in a vertical stack on the table top",
+    "set 2 purple cubes on top of each other"
+  ],
+  "stack_blocks_peract+40": [
+    "stack 3 purple blocks",
+    "place 3 of the purple cubes on top of each other",
+    "pick up and set down 3 purple blocks on top of each other",
+    "build a tall tower out of 3 purple cubes",
+    "arrange 3 purple blocks in a vertical stack on the table top",
+    "set 3 purple cubes on top of each other"
+  ],
+  "stack_blocks_peract+41": [
+    "stack 4 purple blocks",
+    "place 4 of the purple cubes on top of each other",
+    "pick up and set down 4 purple blocks on top of each other",
+    "build a tall tower out of 4 purple cubes",
+    "arrange 4 purple blocks in a vertical stack on the table top",
+    "set 4 purple cubes on top of each other"
+  ],
+  "stack_blocks_peract+42": [
+    "stack 2 teal blocks",
+    "place 2 of the teal cubes on top of each other",
+    "pick up and set down 2 teal blocks on top of each other",
+    "build a tall tower out of 2 teal cubes",
+    "arrange 2 teal blocks in a vertical stack on the table top",
+    "set 2 teal cubes on top of each other"
+  ],
+  "stack_blocks_peract+43": [
+    "stack 3 teal blocks",
+    "place 3 of the teal cubes on top of each other",
+    "pick up and set down 3 teal blocks on top of each other",
+    "build a tall tower out of 3 teal cubes",
+    "arrange 3 teal blocks in a vertical stack on the table top",
+    "set 3 teal cubes on top of each other"
+  ],
+  "stack_blocks_peract+44": [
+    "stack 4 teal blocks",
+    "place 4 of the teal cubes on top of each other",
+    "pick up and set down 4 teal blocks on top of each other",
+    "build a tall tower out of 4 teal cubes",
+    "arrange 4 teal blocks in a vertical stack on the table top",
+    "set 4 teal cubes on top of each other"
+  ],
+  "stack_blocks_peract+45": [
+    "stack 2 azure blocks",
+    "place 2 of the azure cubes on top of each other",
+    "pick up and set down 2 azure blocks on top of each other",
+    "build a tall tower out of 2 azure cubes",
+    "arrange 2 azure blocks in a vertical stack on the table top",
+    "set 2 azure cubes on top of each other"
+  ],
+  "stack_blocks_peract+46": [
+    "stack 3 azure blocks",
+    "place 3 of the azure cubes on top of each other",
+    "pick up and set down 3 azure blocks on top of each other",
+    "build a tall tower out of 3 azure cubes",
+    "arrange 3 azure blocks in a vertical stack on the table top",
+    "set 3 azure cubes on top of each other"
+  ],
+  "stack_blocks_peract+47": [
+    "stack 4 azure blocks",
+    "place 4 of the azure cubes on top of each other",
+    "pick up and set down 4 azure blocks on top of each other",
+    "build a tall tower out of 4 azure cubes",
+    "arrange 4 azure blocks in a vertical stack on the table top",
+    "set 4 azure cubes on top of each other"
+  ],
+  "stack_blocks_peract+48": [
+    "stack 2 violet blocks",
+    "place 2 of the violet cubes on top of each other",
+    "pick up and set down 2 violet blocks on top of each other",
+    "build a tall tower out of 2 violet cubes",
+    "arrange 2 violet blocks in a vertical stack on the table top",
+    "set 2 violet cubes on top of each other"
+  ],
+  "stack_blocks_peract+49": [
+    "stack 3 violet blocks",
+    "place 3 of the violet cubes on top of each other",
+    "pick up and set down 3 violet blocks on top of each other",
+    "build a tall tower out of 3 violet cubes",
+    "arrange 3 violet blocks in a vertical stack on the table top",
+    "set 3 violet cubes on top of each other"
+  ],
+  "stack_blocks_peract+50": [
+    "stack 4 violet blocks",
+    "place 4 of the violet cubes on top of each other",
+    "pick up and set down 4 violet blocks on top of each other",
+    "build a tall tower out of 4 violet cubes",
+    "arrange 4 violet blocks in a vertical stack on the table top",
+    "set 4 violet cubes on top of each other"
+  ],
+  "stack_blocks_peract+51": [
+    "stack 2 rose blocks",
+    "place 2 of the rose cubes on top of each other",
+    "pick up and set down 2 rose blocks on top of each other",
+    "build a tall tower out of 2 rose cubes",
+    "arrange 2 rose blocks in a vertical stack on the table top",
+    "set 2 rose cubes on top of each other"
+  ],
+  "stack_blocks_peract+52": [
+    "stack 3 rose blocks",
+    "place 3 of the rose cubes on top of each other",
+    "pick up and set down 3 rose blocks on top of each other",
+    "build a tall tower out of 3 rose cubes",
+    "arrange 3 rose blocks in a vertical stack on the table top",
+    "set 3 rose cubes on top of each other"
+  ],
+  "stack_blocks_peract+53": [
+    "stack 4 rose blocks",
+    "place 4 of the rose cubes on top of each other",
+    "pick up and set down 4 rose blocks on top of each other",
+    "build a tall tower out of 4 rose cubes",
+    "arrange 4 rose blocks in a vertical stack on the table top",
+    "set 4 rose cubes on top of each other"
+  ],
+  "stack_blocks_peract+54": [
+    "stack 2 black blocks",
+    "place 2 of the black cubes on top of each other",
+    "pick up and set down 2 black blocks on top of each other",
+    "build a tall tower out of 2 black cubes",
+    "arrange 2 black blocks in a vertical stack on the table top",
+    "set 2 black cubes on top of each other"
+  ],
+  "stack_blocks_peract+55": [
+    "stack 3 black blocks",
+    "place 3 of the black cubes on top of each other",
+    "pick up and set down 3 black blocks on top of each other",
+    "build a tall tower out of 3 black cubes",
+    "arrange 3 black blocks in a vertical stack on the table top",
+    "set 3 black cubes on top of each other"
+  ],
+  "stack_blocks_peract+56": [
+    "stack 4 black blocks",
+    "place 4 of the black cubes on top of each other",
+    "pick up and set down 4 black blocks on top of each other",
+    "build a tall tower out of 4 black cubes",
+    "arrange 4 black blocks in a vertical stack on the table top",
+    "set 4 black cubes on top of each other"
+  ],
+  "stack_blocks_peract+57": [
+    "stack 2 white blocks",
+    "place 2 of the white cubes on top of each other",
+    "pick up and set down 2 white blocks on top of each other",
+    "build a tall tower out of 2 white cubes",
+    "arrange 2 white blocks in a vertical stack on the table top",
+    "set 2 white cubes on top of each other"
+  ],
+  "stack_blocks_peract+58": [
+    "stack 3 white blocks",
+    "place 3 of the white cubes on top of each other",
+    "pick up and set down 3 white blocks on top of each other",
+    "build a tall tower out of 3 white cubes",
+    "arrange 3 white blocks in a vertical stack on the table top",
+    "set 3 white cubes on top of each other"
+  ],
+  "stack_blocks_peract+59": [
+    "stack 4 white blocks",
+    "place 4 of the white cubes on top of each other",
+    "pick up and set down 4 white blocks on top of each other",
+    "build a tall tower out of 4 white cubes",
+    "arrange 4 white blocks in a vertical stack on the table top",
+    "set 4 white cubes on top of each other"
+  ],
+  "stack_cups_peract+0": [
+    "stack the other cups on top of the red cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the red cup",
+    "pick up and set the cups down into the red cup",
+    "create a stack of cups with the red cup as its base",
+    "keeping the red cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+1": [
+    "stack the other cups on top of the maroon cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the maroon cup",
+    "pick up and set the cups down into the maroon cup",
+    "create a stack of cups with the maroon cup as its base",
+    "keeping the maroon cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+2": [
+    "stack the other cups on top of the lime cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the lime cup",
+    "pick up and set the cups down into the lime cup",
+    "create a stack of cups with the lime cup as its base",
+    "keeping the lime cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+3": [
+    "stack the other cups on top of the green cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the green cup",
+    "pick up and set the cups down into the green cup",
+    "create a stack of cups with the green cup as its base",
+    "keeping the green cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+4": [
+    "stack the other cups on top of the blue cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the blue cup",
+    "pick up and set the cups down into the blue cup",
+    "create a stack of cups with the blue cup as its base",
+    "keeping the blue cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+5": [
+    "stack the other cups on top of the navy cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the navy cup",
+    "pick up and set the cups down into the navy cup",
+    "create a stack of cups with the navy cup as its base",
+    "keeping the navy cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+6": [
+    "stack the other cups on top of the yellow cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the yellow cup",
+    "pick up and set the cups down into the yellow cup",
+    "create a stack of cups with the yellow cup as its base",
+    "keeping the yellow cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+7": [
+    "stack the other cups on top of the cyan cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the cyan cup",
+    "pick up and set the cups down into the cyan cup",
+    "create a stack of cups with the cyan cup as its base",
+    "keeping the cyan cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+8": [
+    "stack the other cups on top of the magenta cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the magenta cup",
+    "pick up and set the cups down into the magenta cup",
+    "create a stack of cups with the magenta cup as its base",
+    "keeping the magenta cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+9": [
+    "stack the other cups on top of the silver cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the silver cup",
+    "pick up and set the cups down into the silver cup",
+    "create a stack of cups with the silver cup as its base",
+    "keeping the silver cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+10": [
+    "stack the other cups on top of the gray cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the gray cup",
+    "pick up and set the cups down into the gray cup",
+    "create a stack of cups with the gray cup as its base",
+    "keeping the gray cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+11": [
+    "stack the other cups on top of the orange cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the orange cup",
+    "pick up and set the cups down into the orange cup",
+    "create a stack of cups with the orange cup as its base",
+    "keeping the orange cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+12": [
+    "stack the other cups on top of the olive cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the olive cup",
+    "pick up and set the cups down into the olive cup",
+    "create a stack of cups with the olive cup as its base",
+    "keeping the olive cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+13": [
+    "stack the other cups on top of the purple cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the purple cup",
+    "pick up and set the cups down into the purple cup",
+    "create a stack of cups with the purple cup as its base",
+    "keeping the purple cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+14": [
+    "stack the other cups on top of the teal cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the teal cup",
+    "pick up and set the cups down into the teal cup",
+    "create a stack of cups with the teal cup as its base",
+    "keeping the teal cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+15": [
+    "stack the other cups on top of the azure cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the azure cup",
+    "pick up and set the cups down into the azure cup",
+    "create a stack of cups with the azure cup as its base",
+    "keeping the azure cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+16": [
+    "stack the other cups on top of the violet cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the violet cup",
+    "pick up and set the cups down into the violet cup",
+    "create a stack of cups with the violet cup as its base",
+    "keeping the violet cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+17": [
+    "stack the other cups on top of the rose cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the rose cup",
+    "pick up and set the cups down into the rose cup",
+    "create a stack of cups with the rose cup as its base",
+    "keeping the rose cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+18": [
+    "stack the other cups on top of the black cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the black cup",
+    "pick up and set the cups down into the black cup",
+    "create a stack of cups with the black cup as its base",
+    "keeping the black cup on the table, stack the other two onto it"
+  ],
+  "stack_cups_peract+19": [
+    "stack the other cups on top of the white cup",
+    "place two of the cups onto the odd cup out",
+    "put the remaining two cups on top of the white cup",
+    "pick up and set the cups down into the white cup",
+    "create a stack of cups with the white cup as its base",
+    "keeping the white cup on the table, stack the other two onto it"
+  ],
+  "sweep_to_dustpan_of_size_peract+0": [
+    "sweep dirt to the tall dustpan",
+    "sweep the dirt up into the tall dustpan",
+    "use the broom to brush the dirt into the tall dustpan",
+    "clean up the dirt with the tall pan"
+  ],
+  "sweep_to_dustpan_of_size_peract+1": [
+    "sweep dirt to the short dustpan",
+    "sweep the dirt up into the short dustpan",
+    "use the broom to brush the dirt into the short dustpan",
+    "clean up the dirt with the short pan"
+  ],
+  "turn_tap_peract+0": [
+    "turn left tap",
+    "rotate the left tap",
+    "grasp the left tap and turn it"
+  ],
+  "turn_tap_peract+1": [
+    "turn right tap",
+    "rotate the right tap",
+    "grasp the right tap and turn it"
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  "open_drawer_long+0",
+  "open_drawer_long+1",
+  "open_drawer_long+2",
+  "open_drawer_long+3",
+  "close_fridge2+0", 
+  "close_laptop_lid2+0",
+  "close_microwave2+0",
+  "open_door2+0",
+  "open_box2+0",
+  "open_drawer2+0",
+  "open_drawer3+0",
+  "close_door+0",
+  "close_box+0", 
+  "toilet_seat_up+0",	
+  "open_fridge+0",	
+  "open_laptop_lid+0",	
+  "open_microwave+0",	
+  "put_money_in_safe+2",	
+  "open_drawer+1",	
+  "close_drawer+0",	
+  "close_grill+0"
+]

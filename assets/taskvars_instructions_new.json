@@ -1,0 +1,594 @@
+{
+  "push_button+0": [
+    "push the maroon button",
+    "push down the maroon button",
+    "press the button with the maroon base",
+    "press the maroon button"
+  ],
+  "push_button+3": [
+    "push the navy button",
+    "push down the navy button",
+    "press the button with the navy base",
+    "press the navy button"
+  ],
+  "push_button+4": [
+    "push the yellow button",
+    "push down the yellow button",
+    "press the button with the yellow base",
+    "press the yellow button"
+  ],
+  "close_fridge+0": [
+    "close fridge",
+    "close the fridge",
+    "shut the fridge",
+    "close the fridge door",
+    "swing the fridge door shut"
+  ],
+  "close_laptop_lid+0": [
+    "close laptop lid",
+    "close the laptop",
+    "shut the laptop lid"
+  ],
+  "close_microwave+0": [
+    "close microwave",
+    "shut the microwave",
+    "close the microwave door",
+    "push the microwave door shut"
+  ],
+  "open_door+0": [
+    "open the door",
+    "grip the handle and push the door open",
+    "use the handle to open the door",
+    "grasp the handle firmly, twist it, and push to open the door",
+    "grab the handle, turn it, and push on it to open the door"
+  ],
+  "open_box+0": [
+    "open box",
+    "open the box lid",
+    "open the box",
+    "grasp the lid and open the box",
+    "turn the attached lid to open the box",
+    "twist the lid to open the box",
+    "pull the lid to open the box"
+  ],
+  "open_drawer+0": [
+    "open bottom drawer",
+    "grip the bottom handle and pull the bottom drawer open",
+    "slide the bottom drawer open"
+  ],
+  "open_drawer+1": [
+    "open middle drawer",
+    "grip the middle handle and pull the middle drawer open",
+    "slide the middle drawer open"
+  ],
+  "pick_and_lift+0": [
+    "pick up the red block and lift it up to the target",
+    "grasp the red block to the target",
+    "lift the red block up to the target"
+  ],
+  "pick_and_lift+2": [
+    "pick up the lime block and lift it up to the target",
+    "grasp the lime block to the target",
+    "lift the lime block up to the target"
+  ],
+  "pick_and_lift+7": [
+    "pick up the cyan block and lift it up to the target",
+    "grasp the cyan block to the target",
+    "lift the cyan block up to the target"
+  ],
+  "pick_up_cup+8": [
+    "pick up the magenta cup",
+    "grasp the magenta cup and lift it",
+    "lift the magenta cup"
+  ],
+  "pick_up_cup+9": [
+    "pick up the silver cup",
+    "grasp the silver cup and lift it",
+    "lift the silver cup"
+  ],
+  "pick_up_cup+11": [
+    "pick up the orange cup",
+    "grasp the orange cup and lift it",
+    "lift the orange cup"
+  ],
+  "stack_blocks+30": [
+    "stack 2 gray blocks",
+    "place 2 of the gray cubes on top of each other",
+    "pick up and set down 2 gray blocks on top of each other",
+    "build a tall tower out of 2 gray cubes",
+    "arrange 2 gray blocks in a vertical stack on the table top",
+    "set 2 gray cubes on top of each other"
+  ],
+  "stack_blocks+36": [
+    "stack 2 olive blocks",
+    "place 2 of the olive cubes on top of each other",
+    "pick up and set down 2 olive blocks on top of each other",
+    "build a tall tower out of 2 olive cubes",
+    "arrange 2 olive blocks in a vertical stack on the table top",
+    "set 2 olive cubes on top of each other"
+  ],
+  "stack_blocks+39": [
+    "stack 2 purple blocks",
+    "place 2 of the purple cubes on top of each other",
+    "pick up and set down 2 purple blocks on top of each other",
+    "build a tall tower out of 2 purple cubes",
+    "arrange 2 purple blocks in a vertical stack on the table top",
+    "set 2 purple cubes on top of each other"
+  ],
+  "put_groceries_in_cupboard+0": [
+    "put the crackers box in the cupboard",
+    "pick up the crackers box and place it in the cupboard",
+    "move the crackers box to the bottom shelf",
+    "put away the crackers box in the cupboard"
+  ],
+  "put_groceries_in_cupboard+3": [
+    "put the soup can in the cupboard",
+    "pick up the soup can and place it in the cupboard",
+    "move the soup can to the bottom shelf",
+    "put away the soup can in the cupboard"
+  ],
+  "put_groceries_in_cupboard+4": [
+    "put the tuna can in the cupboard",
+    "pick up the tuna can and place it in the cupboard",
+    "move the tuna can to the bottom shelf",
+    "put away the tuna can in the cupboard"
+  ],
+  "put_money_in_safe+0": [
+    "put the money away in the safe on the bottom shelf",
+    "leave the money on the bottom shelf on the safe",
+    "place the stack of bank notes on the bottom shelf of the safe"
+  ],
+  "put_money_in_safe+1": [
+    "put the money away in the safe on the middle shelf",
+    "leave the money on the middle shelf on the safe",
+    "place the stack of bank notes on the middle shelf of the safe"
+  ],
+  "slide_block_to_color_target_peract+0": [
+    "slide the block to green target",
+    "slide the block onto the green square",
+    "push the block until it is sitting on top of the green target",
+    "slide the block towards the green plane",
+    "cover the green target with the block by pushing the block in its direction"
+  ],
+  "slide_block_to_color_target_peract+1": [
+    "slide the block to blue target",
+    "slide the block onto the blue square",
+    "push the block until it is sitting on top of the blue target",
+    "slide the block towards the blue plane",
+    "cover the blue target with the block by pushing the block in its direction"
+  ],
+  "reach_and_drag_peract+14": [
+    "use the stick to drag the cube onto the teal target",
+    "pick up the stick and use it to push or pull the cube onto the teal target",
+    "drag the block towards the teal square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the teal target"
+  ],
+  "reach_and_drag_peract+18": [
+    "use the stick to drag the cube onto the black target",
+    "pick up the stick and use it to push or pull the cube onto the black target",
+    "drag the block towards the black square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the black target"
+  ],
+  "close_jar_peract+15": [
+    "close the azure jar",
+    "screw on the azure jar lid",
+    "grasping the lid, lift it from the table and use it to seal the azure jar",
+    "pick up the lid from the table and put it on the azure jar"
+  ],
+  "close_jar_peract+16": [
+    "close the violet jar",
+    "screw on the violet jar lid",
+    "grasping the lid, lift it from the table and use it to seal the violet jar",
+    "pick up the lid from the table and put it on the violet jar"
+  ],
+  "light_bulb_in_peract+17": [
+    "screw in the rose light bulb",
+    "screw the light bulb from the rose holder into the lamp",
+    "pick up the light bulb from the rose stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the rose casing into the lamp"
+  ],
+  "light_bulb_in_peract+19": [
+    "screw in the white light bulb",
+    "screw the light bulb from the white holder into the lamp",
+    "pick up the light bulb from the white stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the white casing into the lamp"
+  ],
+  "push_button+13": [
+    "push the azure button",
+    "push down the azure button",
+    "press the button with the azure base",
+    "press the azure button"
+  ],
+  "push_button+15": [
+    "push the rose button",
+    "push down the rose button",
+    "press the button with the rose base",
+    "press the rose button"
+  ],
+  "push_button+17": [
+    "push the white button",
+    "push down the white button",
+    "press the button with the white base",
+    "press the white button"
+  ],
+  "open_drawer+2": [
+    "open top drawer",
+    "grip the top handle and pull the top drawer open",
+    "slide the top drawer open"
+  ],
+  "pick_and_lift+14": [
+    "pick up the teal block and lift it up to the target",
+    "grasp the teal block to the target",
+    "lift the teal block up to the target"
+  ],
+  "pick_and_lift+16": [
+    "pick up the violet block and lift it up to the target",
+    "grasp the violet block to the target",
+    "lift the violet block up to the target"
+  ],
+  "pick_and_lift+18": [
+    "pick up the black block and lift it up to the target",
+    "grasp the black block to the target",
+    "lift the black block up to the target"
+  ],
+  "pick_up_cup+10": [
+    "pick up the gray cup",
+    "grasp the gray cup and lift it",
+    "lift the gray cup"
+  ],
+  "pick_up_cup+12": [
+    "pick up the olive cup",
+    "grasp the olive cup and lift it",
+    "lift the olive cup"
+  ],
+  "pick_up_cup+13": [
+    "pick up the purple cup",
+    "grasp the purple cup and lift it",
+    "lift the purple cup"
+  ],
+  "stack_blocks+24": [
+    "stack 2 magenta blocks",
+    "place 2 of the magenta cubes on top of each other",
+    "pick up and set down 2 magenta blocks on top of each other",
+    "build a tall tower out of 2 magenta cubes",
+    "arrange 2 magenta blocks in a vertical stack on the table top",
+    "set 2 magenta cubes on top of each other"
+  ],
+  "stack_blocks+27": [
+    "stack 2 silver blocks",
+    "place 2 of the silver cubes on top of each other",
+    "pick up and set down 2 silver blocks on top of each other",
+    "build a tall tower out of 2 silver cubes",
+    "arrange 2 silver blocks in a vertical stack on the table top",
+    "set 2 silver cubes on top of each other"
+  ],
+  "stack_blocks+33": [
+    "stack 2 orange blocks",
+    "place 2 of the orange cubes on top of each other",
+    "pick up and set down 2 orange blocks on top of each other",
+    "build a tall tower out of 2 orange cubes",
+    "arrange 2 orange blocks in a vertical stack on the table top",
+    "set 2 orange cubes on top of each other"
+  ],
+  "put_money_in_safe+2": [
+    "put the money away in the safe on the top shelf",
+    "leave the money on the top shelf on the safe",
+    "place the stack of bank notes on the top shelf of the safe"
+  ],
+  "slide_block_to_color_target_peract+2": [
+    "slide the block to pink target",
+    "slide the block onto the pink square",
+    "push the block until it is sitting on top of the pink target",
+    "slide the block towards the pink plane",
+    "cover the pink target with the block by pushing the block in its direction"
+  ],
+  "slide_block_to_color_target_peract+3": [
+    "slide the block to yellow target",
+    "slide the block onto the yellow square",
+    "push the block until it is sitting on top of the yellow target",
+    "slide the block towards the yellow plane",
+    "cover the yellow target with the block by pushing the block in its direction"
+  ],
+  "reach_and_drag_peract+5": [
+    "use the stick to drag the cube onto the navy target",
+    "pick up the stick and use it to push or pull the cube onto the navy target",
+    "drag the block towards the navy square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the navy target"
+  ],
+  "reach_and_drag_peract+7": [
+    "use the stick to drag the cube onto the cyan target",
+    "pick up the stick and use it to push or pull the cube onto the cyan target",
+    "drag the block towards the cyan square on the table top",
+    "grasping the stick by one end, pick it up and use the its other end to move the block onto the cyan target"
+  ],
+  "close_jar_peract+3": [
+    "close the green jar",
+    "screw on the green jar lid",
+    "grasping the lid, lift it from the table and use it to seal the green jar",
+    "pick up the lid from the table and put it on the green jar"
+  ],
+  "close_jar_peract+4": [
+    "close the blue jar",
+    "screw on the blue jar lid",
+    "grasping the lid, lift it from the table and use it to seal the blue jar",
+    "pick up the lid from the table and put it on the blue jar"
+  ],
+  "light_bulb_in_peract+1": [
+    "screw in the maroon light bulb",
+    "screw the light bulb from the maroon holder into the lamp",
+    "pick up the light bulb from the maroon stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the maroon casing into the lamp"
+  ],
+  "light_bulb_in_peract+2": [
+    "screw in the lime light bulb",
+    "screw the light bulb from the lime holder into the lamp",
+    "pick up the light bulb from the lime stand, lift it up to just above the lamp, then screw it down into the lamp in a clockwise fashion",
+    "put the light bulb from the lime casing into the lamp"
+  ],
+  "close_door+0": [
+    "close the door",
+    "shut the door",
+    "grasp the handle and pull the door towards you until it fully closes",
+    "close the door by pulling the handle until it engages the latch",
+    "grip the handle and pull the door shut",
+    "use the handle to move the door closed"
+  ],
+  "close_box+0": [
+    "close box",
+    "close the lid on the box",
+    "shut the box",
+    "shut the box lid",
+    "lower the lid onto the box until it is closed",
+    "rotate the attached lid until the box is closed and sealed",
+    "turn the lid on the box until it locks into place"
+  ],
+  "close_drawer+0": [
+    "close bottom drawer",
+    "shut the bottom drawer",
+    "slide the bottom drawer shut",
+    "press on the bottom drawer until it is closed",
+    "close of the bottom drawer by pushing it shut"
+  ],
+  "open_fridge+0": [
+    "open fridge",
+    "grip the handle and slide the fridge door open",
+    "open the fridge door",
+    "grab the fridge door handle and pull to open",
+    "pull the fridge door by the handle to open"
+  ],
+  "open_laptop_lid+0": [
+    "open laptop lid",
+    "open the laptop",
+    "unlock the laptop lid",
+    "lip the laptop lid open",
+    "pull the laptop lid upwards to open",
+    "flip the laptop lid up to open"
+  ],
+  "open_microwave+0": [
+    "open microwave",
+    "open the microwave door",
+    "pull the microwave door open",
+    "use the microwave door handle to swing the microwave door open",
+    "pull the microwave door by the handle to open",
+    "grip the handle and pull the microwave door open"
+  ],
+  "put_cube_in_safe+0": [
+    "put the cube away in the safe on the bottom shelf",
+    "leave the cube on the bottom shelf on the safe",
+    "place the cube on the bottom shelf of the safe"
+  ],
+  "close_fridge2+0": [
+    "close fridge",
+    "close the fridge",
+    "shut the fridge",
+    "close the fridge door",
+    "swing the fridge door shut"
+  ],
+  "close_laptop_lid2+0": [
+    "close laptop lid",
+    "close the laptop",
+    "shut the laptop lid"
+  ],
+  "close_microwave2+0": [
+    "close microwave",
+    "shut the microwave",
+    "close the microwave door",
+    "push the microwave door shut"
+  ],
+  "open_door2+0": [
+    "open the door",
+    "grip the handle and push the door open",
+    "use the handle to open the door",
+    "grasp the handle firmly, twist it, and push to open the door",
+    "grab the handle, turn it, and push on it to open the door"
+  ],
+  "open_box2+0": [
+    "open box",
+    "open the box lid",
+    "open the box",
+    "grasp the lid and open the box",
+    "turn the attached lid to open the box",
+    "twist the lid to open the box",
+    "pull the lid to open the box"
+  ],
+  "open_drawer2+0": [
+    "open bottom drawer",
+    "grip the bottom handle and pull the bottom drawer open",
+    "slide the bottom drawer open"
+  ],
+  "open_drawer3+0": [
+    "open bottom drawer",
+    "grip the bottom handle and pull the bottom drawer open",
+    "slide the bottom drawer open"
+  ],
+  "put_groceries_in_cupboard+6": [
+    "put the coffee can in the cupboard",
+    "pick up the coffee can and place it in the cupboard",
+    "move the coffee can to the bottom shelf",
+    "put away the coffee can in the cupboard"
+  ],
+  "put_groceries_in_cupboard+7": [
+    "put the mustard bottle in the cupboard",
+    "pick up the mustard bottle and place it in the cupboard",
+    "move the mustard bottle to the bottom shelf",
+    "put away the mustard bottle in the cupboard"
+  ],
+  "put_groceries_in_cupboard+8": [
+    "put the sugar box in the cupboard",
+    "pick up the sugar box and place it in the cupboard",
+    "move the sugar box to the bottom shelf",
+    "put away the sugar box in the cupboard"
+  ],
+  "lamp_on+0": [
+    "turn on the light",
+    "press the button to turn on the lamp",
+    "press the light switch",
+    "turn the lamp on",
+    "close the gripper and press on the button until the light turns on",
+    "turn on the light by tapping the button next to the lamp",
+    "press the green button connected to the lamp to turn the light on"
+  ],
+  "close_grill+0": [
+    "close the grill",
+    "grasp the handle and lower the grill cover to close it",
+    "close the bbq",
+    "close the barbecue",
+    "hold the handle and lower it to close the grill cover",
+    "lower the grill cover using the handle to close the bbq"
+  ],
+  "toilet_seat_up+0": [
+    "lift toilet seat up",
+    "put the toilet seat up",
+    "leave the lid of the toilet seat in a upright position",
+    "grip the edge of the toilet seat and lift it up to an upright position",
+    "leave the toilet lid open",
+    "raise the toilet seat"
+  ],
+  "open_drawer_long+0": [
+    "open bottom drawer",
+    "grip the bottom handle and pull the bottom drawer open",
+    "slide the bottom drawer open"
+  ],
+  "open_drawer_long+1": [
+    "open middle bottom drawer",
+    "grip the middle bottom handle and pull the middle bottom drawer open",
+    "slide the middle bottom drawer open"
+  ],
+  "open_drawer_long+2": [
+    "open middle top drawer",
+    "grip the middle top handle and pull the middle top drawer open",
+    "slide the middle top drawer open"
+  ],
+  "open_drawer_long+3": [
+    "open top drawer",
+    "grip the top handle and pull the top drawer open",
+    "slide the top drawer open"
+  ],
+  "pick_and_lift_cylinder+0": [
+    "pick up the red cylinder and lift it up to the target",
+    "grasp the red cylinder to the target",
+    "lift the red cylinder up to the target"
+  ],
+  "pick_and_lift_star+0": [
+    "pick up the red star and lift it up to the target",
+    "grasp the red star to the target",
+    "lift the red star up to the target"
+  ],
+  "pick_and_lift_moon+0": [
+    "pick up the red moon and lift it up to the target",
+    "grasp the red moon to the target",
+    "lift the red moon up to the target"
+  ],
+  "pick_and_lift_toy+0": [
+    "pick up the red rubber duck and lift it up to the target",
+    "grasp the red rubber duck to the target",
+    "lift the red rubber duck up to the target"
+  ],
+  "push_buttons4+1": [
+    "push the navy button, then push the teal button",
+    "press the navy button, then press the teal button",
+    "push down the button with the navy base, then the teal one"
+  ],
+  "push_buttons4+2": [
+    "push the green button, then push the yellow button, then push the rose button",
+    "press the green button, then press the yellow button, then press the rose button",
+    "push down the button with the green base, then the yellow one, then the rose one"
+  ],
+  "push_buttons4+3": [
+    "push the maroon button, then push the blue button, then push the orange button, then push the magenta button",
+    "press the maroon button, then press the blue button, then press the orange button, then press the magenta button",
+    "push down the button with the maroon base, then the blue one, then the orange one, then the magenta one"
+  ],
+  "take_shoes_out_of_box+0": [
+    "take shoes out of box",
+    "open the shoe box and take the shoes out",
+    "put the shoes found inside the box on the table",
+    "set the shoes down on the table",
+    "pick up the shoes from the box and put them down",
+    "grasp the edge of the box lid to open it, then grasp each shoe, lifting up out of the shoe box and leaving them down on the table",
+    "open the shoe box, take the shoes out and put them in front of the box",
+    "put the shoes found inside the box on the part of the table in front of the shoe box"
+  ],
+  "put_items_in_drawer+0": [
+    "put the block in the bottom drawer, then the cylinder and then the moon",
+    "put the block away in the bottom drawer, then put the cylinder and then put the moon",
+    "open the bottom drawer and place the block inside of it, then place the cylinder inside and finally the moon",
+    "leave the block in the bottom drawer, then leave the cylinder and finish by leaving the moon inside"
+  ],
+  "put_items_in_drawer+2": [
+    "put the block in the top drawer, then the cylinder and then the moon",
+    "put the block away in the top drawer, then put the cylinder and then put the moon",
+    "open the top drawer and place the block inside of it, then place the cylinder inside and finally the moon",
+    "leave the block in the top drawer, then leave the cylinder and finish by leaving the moon inside"
+  ],
+  "put_items_in_drawer+4": [
+    "put the block in the middle drawer, then the moon and then the cylinder",
+    "put the block away in the middle drawer, then put the moon and then put the cylinder",
+    "open the middle drawer and place the block inside of it, then place the moon inside and finally the cylinder",
+    "leave the block in the middle drawer, then leave the moon and finish by leaving the cylinder inside"
+  ],
+  "tower4+1": [
+    "first place the orange block. Then stack the gray block on top of it and stack the lime block on top of it. Then place the rose block on top of the lime one",
+    "stack the orange block. Then add the gray cube. Then stack the lime block on top of it and add the rose cube",
+    "stack the orange block. Then place the gray block on top of the orange one stack the lime block on top of it, then add the rose cube",
+    "stack the orange block and add the gray cube place the lime block on top of the gray one, then add the rose cube",
+    "stack the orange block and add the gray cube and add the lime cube. Then place the rose block on top of the lime one",
+    "Place the orange, gray, lime, rose cubes on top of each other",
+    "Pick up and set down orange, gray, lime, rose blocks on top of each other",
+    "Set orange, gray, lime, rose cubes on top of each other",
+    "pick the orange cube and put it on the green marker, then stack the gray block on top of the orange, then stack the lime block on top of the gray, finally stack the rose block on top of the stacked cubes"
+  ],
+  "tower4+3": [
+    "pick up and set down the white block place the teal block on top of the white one stack the blue block on top of it",
+    "first place the white block, then stack the teal block on top of it and place the blue block on top of the teal one",
+    "stack the white block, then place the teal block on top of the white one and place the blue block on top of the teal one",
+    "pick up and set down the white block. Then add the teal cube. Then stack the blue block on top of it",
+    "pick up and set down the white block, then add the teal cube. Then add the blue cube",
+    "Place the white, teal, blue cubes on top of each other",
+    "Pick up and set down white, teal, blue blocks on top of each other",
+    "Set white, teal, blue cubes on top of each other",
+    "pick the white cube and put it on the green marker, then stack the teal block on top of the white, finally stack the blue block on top of the stacked cubes"
+  ],
+  "stack_cups+0": [
+    "stack the other cups on top of the red cup",
+    "put the remaining two cups on top of the red cup",
+    "pick up and set the cups down into the red cup",
+    "create a stack of cups with the red cup as its base",
+    "keeping the red cup on the table, stack the other two onto it"
+  ],
+  "stack_cups+3": [
+    "stack the other cups on top of the green cup",
+    "put the remaining two cups on top of the green cup",
+    "pick up and set the cups down into the green cup",
+    "create a stack of cups with the green cup as its base",
+    "keeping the green cup on the table, stack the other two onto it"
+  ],
+  "put_all_groceries_in_cupboard+0": [
+    "put all of the groceries in the cupboard",
+    "pick up all of the groceries and place them in the cupboard",
+    "move the groceries to the shelves",
+    "put the groceries on the table into the cupboard",
+    "put away the groceries in the cupboard",
+    "put the crackers box, the chocolate jello box, strawberry jello box, soup can, spam can, mustard bottle and sugar box in the cupboard"
+  ]
+}

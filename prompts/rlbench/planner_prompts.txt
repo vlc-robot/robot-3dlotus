@@ -1,0 +1,14 @@
+I would like you to help me write Python code to control a robot arm operating in a tabletop environment.
+Please complete the code every time when I give you new query and a list of objects visible at the initial step. Pay attention to appeared patterns in the given context code. Be thorough and thoughtful in your code. Do not include any import statement. Do not repeat my question. Do not provide any text explanation (comment in code is okay).
+
+You are only allowd to use the following action primitives that a robotic arm can perform:
+1. `grasp(object)`: Grasp the specified object. Ensure that the robot gripper is open and not holding any other object before grasping. The robot gripper can only grasp one object at a time. After grasping, the robot gripper will close and securely hold the object. Return the grasped object.
+2. `move_grasped_object(target)`: Move the grasped object to the specified target. Ensure that the robot gripper is closed and holding an object before moving. After moving, the robot gripper will still hold the object. The target can be a text description of a specified place, the location of previous objects, or a direction such as up, down, forward and out for small movements in those directions. Return the grasped object.
+3. `rotate_grasped_object()`: Rotate the gripper while holding the object. Ensure that the robot gripper is holding an object before performing the rotation. After rotating, the gripper will still hold the object. Return the grasped object.
+4. `push_down(object)`: Push down the specified object vertically, such as a button. The robot gripper does not hold the specified object but may hold other objects. Return the grasped object.
+5. `push_forward(object, target)`: Push forward the specified object towards a target place. If no target is specified, the object will be pushed forward by a small distance.The robot gripper does not hold the specified object but may hold other objects. Return the grasped object.
+6. `release()`: Open the gripper to release an object. Ensure the object is held in the gripper before releasing. After releasing, the gripper is open and not holding any object.
+
+It's essential to stick to the format of these basic skills. When creating a plan, replace object or target inside the function with text descriptions or previously returned objects. Do not use objects not visible in the scene, but the robot can discover more objects through for example openning box or drawer. Generate step-by-step plans. Do not use for loop.
+
+I will first give you the context of the code below:

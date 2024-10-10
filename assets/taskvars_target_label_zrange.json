@@ -1,0 +1,1970 @@
+{
+    "push_button+0": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "maroon button",
+                "fine": [85], 
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "push_button+3": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "navy button",
+                "fine": [85], 
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "push_button+4": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "yellow button",
+                "fine": [85], 
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "close_fridge+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "fridge door",
+                "fine": [92], 
+                "coarse": [86, 89, 92, 94, 95]
+            }
+        }
+    ],
+    "close_laptop_lid+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "laptop lid",
+                "fine": [85],
+                "coarse": [85, 82, 90]
+            }
+        },
+        {
+            "action": "move grasped object down"
+        }
+    ],
+    "close_microwave+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "microwave door",
+                "fine": [87],
+                "coarse": [87, 84]
+            }
+        }
+    ],
+    "open_door+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "door handle",
+                "fine": [89],
+                "coarse": [82, 89, 90]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "door handle",
+                "fine": [89],
+                "coarse": [82, 89, 90]
+            }
+        }
+    ],
+    "open_box+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "box lid",
+                "fine": [83],
+                "coarse": [83, 81]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "open_drawer+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "bottom drawer handle",
+                "fine": [83],
+                "coarse": [81, 83, 88, 90, 93],
+                "zrange": [0.82, 0.96]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_drawer+1": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "middle drawer handle",
+                "fine": [90],
+                "coarse": [81, 83, 88, 90, 93],
+                "zrange": [0.96, 1.1]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "pick_and_lift+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "red cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "lime cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift+7": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "cyan cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_up_cup+8": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "magenta cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "pick_up_cup+9": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "silver cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "pick_up_cup+11": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "orange cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "stack_blocks+30": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "stack_blocks+36": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "olive cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "olive cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "olive cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "stack_blocks+39": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "purple cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "purple cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "purple cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "put_groceries_in_cupboard+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "crackers box",
+                "fine": [114],
+                "coarse": [114]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [109],
+                "coarse": [109]
+            }
+        }
+    ],
+    "put_groceries_in_cupboard+3": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "soup can",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [109],
+                "coarse": [109]
+            }
+        }
+    ],
+    "put_money_in_safe+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "money",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom shelf",
+                "fine": [81],
+                "coarse": [81, 82, 89],
+                "zrange": [0.75, 0.89]
+            }
+        }
+    ],
+    "put_money_in_safe+1": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "money",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "middle shelf",
+                "fine": [81],
+                "coarse": [81, 82, 89],
+                "zrange": [0.88, 1.05]
+            }
+        }
+    ],
+    "slide_block_to_color_target_peract+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "red cube",
+                "fine": [85],
+                "coarse": [85]
+            },
+            "target": {
+                "name": "green square",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "slide_block_to_color_target_peract+1": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "red cube",
+                "fine": [85],
+                "coarse": [85]
+            },
+            "target": {
+                "name": "blue square",
+                "fine": [86],
+                "coarse": [86]
+            }
+        }
+    ],
+    "reach_and_drag_peract+14": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "stick",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            },
+            "target": {
+                "name": "teal square",
+                "fine": [89],
+                "coarse": [89]
+            }
+        }
+    ],
+    "reach_and_drag_peract+18": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "stick",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            },
+            "target": {
+                "name": "black square",
+                "fine": [89],
+                "coarse": [89]
+            }
+        }
+    ],
+    "close_jar_peract+15": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray lid",
+                "fine": [87],
+                "coarse": [87]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "azure jar",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "close_jar_peract+16": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray lid",
+                "fine": [87],
+                "coarse": [87]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "violet jar",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "light_bulb_in_peract+17": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "rose light bulb",
+                "fine": [91],
+                "coarse": [91, 88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "brown lamp",
+                "fine": [82],
+                "coarse": [82, 81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "light_bulb_in_peract+19": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "white light bulb",
+                "fine": [91],
+                "coarse": [91, 88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "brown lamp",
+                "fine": [82],
+                "coarse": [82, 81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "push_button+13": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "azure button",
+                "fine": [85],
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "push_button+15": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "rose button",
+                "fine": [85],
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "push_button+17": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "white button",
+                "fine": [85],
+                "coarse": [85, 81]
+            }
+        }
+    ],
+    "open_drawer+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "top drawer handle",
+                "fine": [93],
+                "coarse": [81, 83, 88, 90, 93],
+                "zrange": [1.1, 1.24]
+            }
+        },
+        {
+            "action": "move grasped object out"
+
+        }
+    ],
+    "pick_and_lift+14": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "teal cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift+16": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "violet cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift+18": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "black cube",
+                "fine": [84],
+                "coarse": [84]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+     "pick_up_cup+10": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],   
+     "pick_up_cup+12": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "olive cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],   
+     "pick_up_cup+13": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "purple cup",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],   
+    "stack_blocks+24": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "magenta cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "magenta cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "magenta cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "stack_blocks+27": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "silver cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "silver cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "silver cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "stack_blocks+33": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "orange cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "orange cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "orange cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        }
+    ],
+    "put_money_in_safe+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "money",
+                "fine": [83],
+                "coarse": [83]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "top shelf",
+                "fine": [81],
+                "coarse": [81, 82],
+                "zrange": [1.05, 1.24]
+            }
+        }
+    ],
+     "slide_block_to_color_target_peract+2": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "red cube",
+                "fine": [85],
+                "coarse": [85]
+            },
+            "target": {
+                "name": "pink square",
+                "fine": [99],
+                "coarse": [99]
+            }
+        }
+    ],
+    "slide_block_to_color_target_peract+3": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "red cube",
+                "fine": [85],
+                "coarse": [85]
+            },
+            "target": {
+                "name": "yellow square",
+                "fine": [103],
+                "coarse": [103]
+            }
+        }
+    ],
+    "reach_and_drag_peract+5": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "stick",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            },
+            "target": {
+                "name": "navy square",
+                "fine": [89],
+                "coarse": [89]
+            }
+        }
+    ],
+    "reach_and_drag_peract+7": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "stick",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "gray cube",
+                "fine": [81],
+                "coarse": [81]
+            },
+            "target": {
+                "name": "cyan square",
+                "fine": [89],
+                "coarse": [89]
+            }
+        }
+    ],
+     "close_jar_peract+3": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray lid",
+                "fine": [87],
+                "coarse": [87]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "green jar",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],   
+    "close_jar_peract+4": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray lid",
+                "fine": [87],
+                "coarse": [87]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "blue jar",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ], 
+    "light_bulb_in_peract+1": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "maroon light bulb",
+                "fine": [91],
+                "coarse": [91, 88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "brown lamp",
+                "fine": [82],
+                "coarse": [82, 81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "light_bulb_in_peract+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "lime light bulb",
+                "fine": [91],
+                "coarse": [91, 88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "brown lamp",
+                "fine": [82],
+                "coarse": [82, 81]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        }
+    ],
+    "close_door+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "door handle",
+                "fine": [88],
+                "coarse": [88, 91, 82]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "close_box+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "box lid",
+                "fine": [88],
+                "coarse": [88, 81]
+            }
+        },
+        {
+            "action": "move grasped object down"
+        }
+    ],
+    "close_drawer+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "bottom drawer",
+                "fine": [83], 
+                "coarse": [83,81,87,90,85],
+                "zrange": [0.82, 0.96]
+            }
+        }
+    ],
+    "open_fridge+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "top fridge door handle",
+                "fine": [90],
+                "coarse": [90, 84, 87]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_laptop_lid+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "laptop lid",
+                "fine": [85],
+                "coarse": [85, 82, 91]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "open_microwave+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "microwave door handle",
+                "fine": [87],
+                "coarse": [84, 87]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "put_cube_in_safe+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [93],
+                "coarse": [93]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom shelf",
+                "fine": [81],
+                "coarse": [81, 83],
+                "zrange": [0.75, 0.89]
+            }
+        }
+    ],
+    "close_fridge2+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "fridge door",
+                "fine": [88], 
+                "coarse": [88, 85, 89]
+            }
+        }
+    ],
+    "close_laptop_lid2+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "laptop lid",
+                "fine": [90],
+                "coarse": [90, 81, 83]
+            }
+        },
+        {
+            "action": "move grasped object down"
+        }
+    ],
+    "close_microwave2+0": [
+        {
+            "action": "push forward",
+            "object": {
+                "name": "microwave door",
+                "fine": [89],
+                "coarse": [89, 86]
+            }
+        }
+    ],
+    "open_door2+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "door handle",
+                "fine": [88],
+                "coarse": [88, 85, 82]
+            }
+        },
+        {
+            "action": "rotate grasped object"
+        },
+        {
+            "action": "push forward",
+            "object": {
+                "name": "door handle",
+                "fine": [88],
+                "coarse": [88, 85, 82]
+            }
+        }
+    ],      
+    "open_box2+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "box lid",
+                "fine": [83],
+                "coarse": [83, 81]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "open_drawer2+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "bottom drawer handle",
+                "fine": [89],
+                "coarse": [81, 86, 89, 92],
+                "zrange": [0.77, 0.94]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_drawer3+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "bottom drawer handle",
+                "fine": [89],
+                "coarse": [81, 86, 89, 92],
+                "zrange": [0.77, 0.94]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "put_groceries_in_cupboard+7": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "mustard bottle",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [109],
+                "coarse": [109]
+            }
+        }
+    ],
+    "put_groceries_in_cupboard+8": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "sugar box",
+                "fine": [97],
+                "coarse": [97]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [109],
+                "coarse": [109]
+            }
+        }
+    ],
+    "lamp_on+0": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "green button",
+                "fine": [91], 
+                "coarse": [91, 87]
+            }
+        }
+    ],
+    "open_drawer_long+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "bottom drawer handle",
+                "fine": [89],
+                "coarse": [81,89,95,92,86,97],
+                "zrange": [0.77, 0.92]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_drawer_long+1": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "middle bottom drawer handle",
+                "fine": [95],
+                "coarse": [81,89,95,92,86,97],
+                "zrange": [0.9, 1.02]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_drawer_long+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "middle top drawer handle",
+                "fine": [92],
+                "coarse": [81,89,95,92,86,97],
+                "zrange": [1.0, 1.12]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "open_drawer_long+3": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "top drawer handle",
+                "fine": [86],
+                "coarse": [81,89,95,92,86,97],
+                "zrange": [1.1, 1.25]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "pick_and_lift_cylinder+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "red cylinder",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift_star+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "red star",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift_moon+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "red moon",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "pick_and_lift_toy+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "red duck rubber",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "red ball",
+                "fine": [83],
+                "coarse": [83]
+            }
+        }
+    ],
+    "push_buttons4+1": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "navy button",
+                "fine": [86], 
+                "coarse": [86, 82]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "teal button",
+                "fine": [90], 
+                "coarse": [90, 88]
+            }
+        }
+    ],
+    "push_buttons4+2": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "green button",
+                "fine": [86], 
+                "coarse": [86, 82]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "yellow button",
+                "fine": [90], 
+                "coarse": [90, 88]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "rose button",
+                "fine": [94], 
+                "coarse": [94, 92]
+            }
+        }
+    ],
+    "push_buttons4+3": [
+        {
+            "action": "push down",
+            "object": {
+                "name": "maroon button",
+                "fine": [86], 
+                "coarse": [86, 82]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "blue button",
+                "fine": [90], 
+                "coarse": [90, 88]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "orange button",
+                "fine": [94], 
+                "coarse": [94, 92]
+            }
+        },
+        {
+            "action": "push down",
+            "object": {
+                "name": "magenta button",
+                "fine": [98], 
+                "coarse": [98, 96]
+            }
+        }
+    ],
+    "take_shoes_out_of_box+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "box lid",
+                "fine": [96],
+                "coarse": [92, 96]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "shoe",
+                "fine": [82],
+                "coarse": [82]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "shoe",
+                "fine": [102],
+                "coarse": [102]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        }
+    ],
+    "tower4+1": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "orange cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "gray square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "orange cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "lime cube",
+                "fine": [95],
+                "coarse": [95]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "gray cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "rose cube",
+                "fine": [96],
+                "coarse": [96]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "lime cube",
+                "fine": [95],
+                "coarse": [95]
+            }
+        }
+    ],
+    "tower4+3": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "white cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "gray square",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "teal cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "white cube",
+                "fine": [81],
+                "coarse": [81]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "blue cube",
+                "fine": [95],
+                "coarse": [95]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "teal cube",
+                "fine": [90],
+                "coarse": [90]
+            }
+        }
+    ],
+    "stack_cups+0": [
+    {
+        "action": "grasp",
+        "object": {
+            "name": "not red cup",
+            "fine": [82],
+            "coarse": [82]
+        }
+    },
+    {
+        "action": "move grasped object",
+        "target": {
+            "name": "red cup",
+            "fine": [87],
+            "coarse": [87]
+        }
+    },
+    {
+        "action": "grasp",
+        "object": {
+            "name": "not red cup",
+            "fine": [97],
+            "coarse": [97]
+        }
+    },
+    {
+        "action": "move grasped object",
+        "target": {
+            "name": "not red cup",
+            "fine": [82],
+            "coarse": [82]
+        }
+    }],
+    "stack_cups+3": [
+    {
+        "action": "grasp",
+        "object": {
+            "name": "not green cup",
+            "fine": [82],
+            "coarse": [82]
+        }
+    },
+    {
+        "action": "move grasped object",
+        "target": {
+            "name": "green cup",
+            "fine": [87],
+            "coarse": [87]
+        }
+    },
+    {
+        "action": "grasp",
+        "object": {
+            "name": "not green cup",
+            "fine": [97],
+            "coarse": [97]
+        }
+    },
+    {
+        "action": "move grasped object",
+        "target": {
+            "name": "not green cup",
+            "fine": [82],
+            "coarse": [82]
+        }
+    }],
+    "put_all_groceries_in_cupboard+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "crackers box",
+                "fine": [94],
+                "coarse": [94]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "chocolate jello",
+                "fine": [82],
+                "coarse": [82]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "strawberry jello",
+                "fine": [85],
+                "coarse": [85]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "tomato soup can",
+                "fine": [120],
+                "coarse": [120]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "tuna fish can",
+                "fine": [88],
+                "coarse": [88]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "mustard bottle",
+                "fine": [97],
+                "coarse": [97]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "sugar box",
+                "fine": [91],
+                "coarse": [91]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "cupboard",
+                "fine": [103],
+                "coarse": [103]
+            }
+        }
+        
+    ],
+    "put_items_in_drawer+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "bottom drawer handle",
+                "fine": [91],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.82, 0.96]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [113],
+                "coarse": [113]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom drawer",
+                "fine": [91],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.82, 0.96]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cylinder",
+                "fine": [105],
+                "coarse": [105]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom drawer",
+                "fine": [91],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.82, 0.96]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray moon",
+                "fine": [127],
+                "coarse": [127]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom drawer",
+                "fine": [91],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.82, 0.96]
+            }
+        }
+    ],
+    "put_items_in_drawer+2": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "top drawer handle",
+                "fine": [100],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [1.1, 1.24]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cylinder",
+                "fine": [105],
+                "coarse": [105]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "top drawer",
+                "fine": [100],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [1.1, 1.24]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [113],
+                "coarse": [113]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "top drawer",
+                "fine": [100],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [1.1, 1.24]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray moon",
+                "fine": [127],
+                "coarse": [127]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "bottom drawer",
+                "fine": [100],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [1.1, 1.24]
+            }
+        }
+    ],
+    "put_items_in_drawer+4": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "middle drawer handle",
+                "fine": [96],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.96, 1.1]
+            }
+        },
+        {
+            "action": "move grasped object out"
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray moon",
+                "fine": [127],
+                "coarse": [127]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "middle drawer",
+                "fine": [96],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.96, 1.1]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cube",
+                "fine": [113],
+                "coarse": [113]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "middle drawer",
+                "fine": [96],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.96, 1.1]
+            }
+        },
+        {
+            "action": "grasp",
+            "object": {
+                "name": "gray cylinder",
+                "fine": [103],
+                "coarse": [103]
+            }
+        },
+        {
+            "action": "move grasped object",
+            "target": {
+                "name": "middle drawer",
+                "fine": [96],
+                "coarse": [89, 91, 94, 96, 100],
+                "zrange": [0.96, 1.1]
+            }
+        }
+    ],
+    "toilet_seat_up+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "toilet lid",
+                "fine": [84],
+                "coarse": [81, 84]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ],
+    "close_grill+0": [
+        {
+            "action": "grasp",
+            "object": {
+                "name": "grill handle",
+                "fine": [87],
+                "coarse": [87, 86]
+            }
+        },
+        {
+            "action": "move grasped object up"
+        }
+    ]
+}

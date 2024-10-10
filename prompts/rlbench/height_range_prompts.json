@@ -1,0 +1,5 @@
+{
+    "system_prompt": "You are a highly skilled assistant specializing in robot manipulation.",
+    "user1": "Please help me define the height range for different levels of an articulated object. I will provide you the target level and the total height of the object. Your task is to output two numbers representing the height range for the target level. Pay attention to the appeared patterns in the given examples. Do not repeat my question. Do not provide any text explanation. The examples are as follows: \n\ntarget: bottom drawer handle\nheight: 0.4\ntarget height range: [0.1, 0.2]\n\ntarget: top drawer handle\nheight: 0.4\ntarget height range: [0.3, 0.4]\n\ntarget: bottom shelf\nheight: 0.5\ntarget height range: [0, 0.1]\n\ntarget: middle shelf\nheight: 0.5\ntarget height range: [0.15, 0.25]",
+    "assistant1": "Got it. I will complete what you give me next."
+}

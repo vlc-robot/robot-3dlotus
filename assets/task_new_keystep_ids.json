@@ -1,0 +1,113 @@
+{
+  "old_num_keysteps": {
+    "push_button": [3],
+    "close_fridge": [3, 2],
+    "close_laptop_lid": [5],
+    "close_microwave": [3],
+    "open_door": [5],
+    "open_box": [4],
+    "open_drawer": [4],
+    "pick_and_lift": [5],
+    "pick_up_cup": [4],
+    "stack_blocks": [12],
+    "put_groceries_in_cupboard": [6, 5, 7],
+    "put_money_in_safe": [6, 5],
+    "slide_block_to_color_target_peract": [3, 6],
+    "reach_and_drag_peract": [7, 8],
+    "close_jar_peract": [7, 9],
+    "light_bulb_in_peract": [8]
+  },
+  "new_keystep_ids": {
+    "push_button": [
+      0,
+      -1
+    ],
+    "close_fridge": [
+      0,
+      -1
+    ],
+    "close_laptop_lid": [
+      0,
+      1,
+      -1
+    ],
+    "close_microwave": [
+      0,
+      -1
+    ],
+    "open_door": [
+      0,
+      2,
+      3,
+      -1
+    ],
+    "open_box": [
+      0,
+      2,
+      -1
+    ],
+    "open_drawer": [
+      0,
+      2,
+      -1
+    ],
+    "pick_and_lift": [
+      0,
+      2,
+      -1
+    ],
+    "pick_up_cup": [
+      0,
+      2,
+      -1
+    ],
+    "stack_blocks": [
+      0,
+      2,
+      5,
+      8,
+      -1
+    ],
+    "put_groceries_in_cupboard": [
+      0,
+      2,
+      -1
+    ],
+    "put_money_in_safe": [
+      0,
+      2,
+      -1
+    ],
+    "slide_block_to_color_target_peract": [
+      0,
+      -1
+    ],
+    "reach_and_drag_peract": [
+      0,
+      2,
+      -1
+    ],
+    "close_jar_peract": [
+      0,
+      2,
+      5,
+      -1
+    ],
+    "light_bulb_in_peract": [
+      0,
+      2,
+      5,
+      -1
+    ]
+  },
+  "separate_gripper_open_at_old_keystep": {
+    "close_laptop_lid": [-1],
+    "open_box": [-1],
+    "open_drawer": [-1],
+    "stack_blocks": [5, -1],
+    "put_groceries_in_cupboard": [-1],
+    "put_money_in_safe": [-1],
+    "close_jar_peract": [-1],
+    "light_bulb_in_peract": [-1]
+  }
+}
