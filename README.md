@@ -45,7 +45,7 @@ Train the 3D-LOTUS policy end-to-end on the GemBench train split. It takes about
 sbatch job_scripts/train_3dlotus_policy.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/0g6iz7d7zb524339dgtms/AHS42SO7aPpwut8I8YN8H3w?rlkey=3fwdehsguqsxofzq9kp9fy8fm&st=o25odnuc&dl=0).
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/0g6iz7d7zb524339dgtms/AHS42SO7aPpwut8I8YN8H3w?rlkey=3fwdehsguqsxofzq9kp9fy8fm&st=eqdd6qvf&dl=0).
 
 ### Evaluation
 ```bash
@@ -75,7 +75,7 @@ Train the 3D-LOTUS++ motion planning policy on the GemBench train split. It take
 sbatch job_scripts/train_3dlotusplous_motion_planner.sh
 ```
 
-The trained checkpoints are available [here]().
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/e623fv9wvu8ke1qjp7ni5/AEydRnEnUHk-eA6n5EVsb_E?rlkey=1uv7fl7zfega1ed80qw3gbzge&st=whuys6zg&dl=0).
 
 ### Evaluation
 
