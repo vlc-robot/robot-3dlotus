@@ -89,3 +89,14 @@ See comments in the following scripts:
 # both validation and test splits
 sbatch job_scripts/eval_3dlotus_policy.sh
 ```
+
+## Citation
+If you use our GemBench benchmark or find our code helpful, please kindly cite our work:
+```bibtex
+ @inproceedings{garcia24gembench,
+    author    = {Ricardo Garcia and Shizhe Chen and Cordelia Schmid},
+    title     = {Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy},
+    booktitle = {preprint},
+    year      = {2024}
+}    
+```
