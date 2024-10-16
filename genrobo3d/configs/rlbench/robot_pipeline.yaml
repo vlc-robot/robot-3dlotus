@@ -21,7 +21,7 @@ object_grounding:
     use_groundtruth: False
 
 motion_planner:
-    expr_dir: 'data/experiments_icra25/gembench/motion_planner_ptv3/all-v1'
+    expr_dir: 'data/experiments/gembench/3dlotusplus/v1'
     ckpt_step: 150000
     run_action_step: 1 
     pc_label_type: coarse
