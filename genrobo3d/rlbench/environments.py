@@ -48,6 +48,7 @@ class Mover:
         self._step_id = 0
 
     def __call__(self, action: np.ndarray, verbose=True):
+        print(f'Mover called for step {self._step_id}, and action {action}')
         action = action.copy()
 
         change_gripper = ((self._last_action[-1] > 0.5) & (action[-1] < 0.5)) or \
@@ -64,11 +65,17 @@ class Mover:
         obs = None
         terminate = None
         reward = 0
-
+        print(f'change_gripper: {change_gripper}')
+        print(f'start of the loop to try for step {self._step_id}')
         for try_id in range(self._max_tries):
-            # print('task step', try_id)
-            obs, reward, terminate = self._task.step(action)
-            # print('finish step')
+            print('task step', try_id)
+            try:
+                obs, reward, terminate = self._task.step(action)
+            except Exception as e:
+                print(f"Exception during task step: {e}")
+                reward = 0
+                break
+            print('finish step')
 
             pos = obs.gripper_pose[:3]
             rot = obs.gripper_pose[3:7]

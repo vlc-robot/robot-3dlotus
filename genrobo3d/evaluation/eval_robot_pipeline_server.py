@@ -81,7 +81,9 @@ def consumer_fn(args, pipeline_config, batch_queue, result_queues):
         actioner = RobotPipeline(pipeline_config)
 
     while True:
+        print('while loop consumer starts')
         data = batch_queue.get()
+        print(f'get data from batch_queue')
         if data is None:
             print('Received None value -> Producers finished.')
             break
@@ -89,7 +91,9 @@ def consumer_fn(args, pipeline_config, batch_queue, result_queues):
         # run one batch
         k_prod, batch = data
         out = actioner.predict(**batch)
+        print(f"put data to result_queue: {out['action']}")
         result_queues[k_prod].put(out)
+        print('put data to result_queue done')
 
 
 def producer_fn(
@@ -218,7 +222,9 @@ def producer_fn(
             # update the observation based on the predicted action
             try:
                 # print('get new step', step_id)
-                obs, reward, terminate, _ = move(action, verbose=False)
+                print('Before move', step_id)
+                obs, reward, terminate, _ = move(action, verbose=True)
+                print('After move', step_id)
                 # print('finish mover')
                 obs_state_dict = env.get_observation(obs)  # type: ignore
                 # print('finish get new step')

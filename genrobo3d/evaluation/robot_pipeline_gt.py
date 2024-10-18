@@ -226,6 +226,7 @@ class GroundtruthRobotPipeline(object):
 
     @torch.no_grad()
     def predict(self, task_str, variation, step_id, obs_state_dict, episode_id, instructions, cache=None):
+        print(f'### step_id={step_id}, task={task_str}, variation={variation}')
         taskvar = f'{task_str}+{variation}'
 
         if step_id == 0:
@@ -242,7 +243,6 @@ class GroundtruthRobotPipeline(object):
                 cache.episode_outdir = None
 
         # print(f'taskvar={task_str}+{variation}, step={step_id}, #cache_actions={len(self.cache.valid_actions)}')
-
         if len(cache.valid_actions) > 0:
             cur_action = cache.valid_actions[0][:8]
             cache.valid_actions = cache.valid_actions[1:]
@@ -256,7 +256,6 @@ class GroundtruthRobotPipeline(object):
                     }
                 )
             return out
-
         pcd_images = obs_state_dict['pc']
         rgb_images = obs_state_dict['rgb']
         sem_images = obs_state_dict['gt_mask']
@@ -265,6 +264,7 @@ class GroundtruthRobotPipeline(object):
 
         # initialize: task planning
         if step_id == 0:
+            print('task planning step 0')
             if self.config.llm_planner.use_groundtruth:
                 highlevel_plans = self.llm_planner(taskvar)
             
@@ -285,13 +285,13 @@ class GroundtruthRobotPipeline(object):
         plan = cache.highlevel_plans[cache.highlevel_step_id]
         if plan is None:
             return {'action': np.zeros((8, ))}
-        
+
         if plan['action'] == 'release':
             action = gripper_pose
             action[7] = 1
             cache.highlevel_step_id += 1
+            print(f'returning release action and cache')
             return {'action': action, 'cache': cache}
-
         batch = self.vlm_pipeline(
             taskvar, cache.highlevel_step_id_norelease, 
             pcd_images, sem_images, gripper_pose, arm_links_info,

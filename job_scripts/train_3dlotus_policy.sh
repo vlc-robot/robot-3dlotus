@@ -18,7 +18,7 @@ set -e
 module purge
 pwd; hostname; date
 
-cd $HOME/codes/robot-3dlotus
+cd $HOME/Projects/robot-3dlotus
 
 . $HOME/miniconda3/etc/profile.d/conda.sh
 conda activate gembench

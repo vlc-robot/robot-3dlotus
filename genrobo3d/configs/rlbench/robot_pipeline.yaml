@@ -3,7 +3,7 @@ pipeline:
     real_robot: False
 
 llm_planner:
-    # ckpt_dir: '/scratch/shichen/datasets/pretrained/meta-llama/Meta-Llama-3-8B-Instruct'
+    # ckpt_dir: '/scratch/ppacaud/datasets/pretrained/meta-llama/Meta-Llama-3-8B-Instruct'
     # prompt_dir: 'prompts/rlbench'
     master_port: 12300
     use_groundtruth: True
@@ -11,7 +11,7 @@ llm_planner:
     gt_plan_file: 'prompts/rlbench/in_context_examples.txt'
     taskvar_instr_file: 'assets/taskvars_instructions_new.json'
 
-    ckpt_dir: '/scratch/shichen/datasets/pretrained/meta-llama/Meta-Llama-3-8B-Instruct'
+    ckpt_dir: '/scratch/ppacaud/datasets/pretrained/meta-llama/Meta-Llama-3-8B-Instruct'
     groq_model: null
     cache_file: null
     prompt_dir: 'prompts/rlbench'
