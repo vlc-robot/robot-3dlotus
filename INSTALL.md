@@ -44,7 +44,7 @@ export QT_QPA_PLATFORM_PLUGIN_PATH=$COPPELIASIM_ROOT
 
 Install Pyrep and RLBench
 ```bash
-git clone https://github.com/stepjam/PyRep
+git clone https://github.com/cshizhe/PyRep.git
 cd PyRep
 pip install -r requirements.txt
 pip install .
