@@ -28,6 +28,10 @@ export sif_image=/scratch/shichen/singularity_images/nvcuda_v2.sif
 export python_bin=$HOME/miniconda3/envs/gembench/bin/python
 export SINGULARITYENV_LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${COPPELIASIM_ROOT}
 
+export XDG_RUNTIME_DIR=$SCRATCH/tmp/runtime-$SLURM_JOBID
+mkdir -p $XDG_RUNTIME_DIR
+chmod 700 $XDG_RUNTIME_DIR
+
 expr_dir=data/experiments/gembench/3dlotusplus/v1
 ckpt_step=140000
 
