@@ -37,6 +37,8 @@ Dataset structure is as follows:
             - microsteps: 2.2G, initial configurations for each episode
 ```
 
+The RLBench-18task dataset (peract) can be downloaded [here](https://www.dropbox.com/scl/fo/f01284con45rv1j80um1x/AAHs9tK4vFQPRvHKALvFUu4?rlkey=6lz54q7zwont1sb2ft25ib6k1&st=6p85ymk9&dl=0), following the same dataset structure as gembench.
+
 ## 3D-LOTUS Policy
 
 ### Training
@@ -45,7 +47,7 @@ Train the 3D-LOTUS policy end-to-end on the GemBench train split. It takes about
 sbatch job_scripts/train_3dlotus_policy.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/0g6iz7d7zb524339dgtms/AHS42SO7aPpwut8I8YN8H3w?rlkey=3fwdehsguqsxofzq9kp9fy8fm&st=eqdd6qvf&dl=0). You should put them in the folder data/experiments/gembench/3dlotus/v1
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/0g6iz7d7zb524339dgtms/AHS42SO7aPpwut8I8YN8H3w?rlkey=3fwdehsguqsxofzq9kp9fy8fm&st=eqdd6qvf&dl=0). You should put them in the folder `data/experiments/gembench/3dlotus/v1`.
 
 ### Evaluation
 ```bash
@@ -54,7 +56,7 @@ sbatch job_scripts/eval_3dlotus_policy.sh
 ```
 
 The evaluation script evaluates the 3D-LOTUS policy on the validation (seed100) and test splits of the GemBench benchmark.
-The evaluation script skips any task that has already been evaluated before and whose results are already saved in data/experiments/gembench/3dlotus/v1/preds/ so make  sure to clean it if you want to re-evaluate a task that you already evaluated.
+The evaluation script skips any task that has already been evaluated before and whose results are already saved in `data/experiments/gembench/3dlotus/v1/preds/` so make  sure to clean it if you want to re-evaluate a task that you already evaluated.
 
 We use the validation set to select the best checkpoint. The following script summarizes results on the validation split.
 ```bash
@@ -66,6 +68,14 @@ The following script summarizes results on the test splits of four generalizatio
 python scripts/summarize_tst_results.py data/experiments/gembench/3dlotus/v1/preds 150000
 ```
 
+### Training and Evaluation on RLBench-18task dataset (peract)
+
+```bash
+sbatch job_scripts/train_3dlotus_policy_peract.sh
+sbatch job_scripts/eval_3dlotus_policy_peract.sh
+```
+
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/ym63ogysi7187ybe6147u/APhpyKBg85rfozgTCGNjOvg?rlkey=kocpzhg1lnbrofjig6ju9vxps&st=5u4g3lau&dl=0). You should put them in the folder `data/experiments/peract/3dlotus/v1`.
 
 ## 3D-LOTUS++ Policy with LLM and VLM
 
