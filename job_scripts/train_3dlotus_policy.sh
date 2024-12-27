@@ -3,7 +3,7 @@
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:a100:1
+#SBATCH --gres=gpu:tesla_p4:1.
 #SBATCH --hint=nomultithread
 #SBATCH --time=48:00:00
 #SBATCH --mem=40G
