@@ -2,7 +2,7 @@
 #SBATCH --job-name=simple_policy
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:1  
 #SBATCH --hint=nomultithread
 #SBATCH --time=48:00:00
