@@ -10,10 +10,10 @@ TRAIN:
   freeze_params:
     encoder: False
     decoder: False
-
+  world_size: 1
   train_batch_size: 64
   val_batch_size: 64
-
+  
   gradient_accumulation_steps: 1
   num_epochs: null
   num_train_steps: null #200000
