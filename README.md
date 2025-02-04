@@ -39,6 +39,8 @@ Dataset structure is as follows:
 
 The RLBench-18task dataset (peract) can be downloaded [here](https://www.dropbox.com/scl/fo/f01284con45rv1j80um1x/AAHs9tK4vFQPRvHKALvFUu4?rlkey=6lz54q7zwont1sb2ft25ib6k1&st=6p85ymk9&dl=0), following the same dataset structure as gembench.
 
+**New!**: The scripts to generate the training data can be found [here](DATAGEN.md).
+
 ## 3D-LOTUS Policy
 
 ### Training
