@@ -1,6 +1,6 @@
 # Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy
 
-This repository is the official implementation of [Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy](https://arxiv.org/abs/2410.01345).
+This repository is the official implementation of "[Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy](https://arxiv.org/abs/2410.01345)" (ICRA 2025).
 
 Generalizing language-conditioned robotic policies to new tasks remains a significant challenge, hampered by the lack of suitable simulation benchmarks. In this paper, we address this gap by introducing GemBench, a novel benchmark to assess generalization capabilities of vision-language robotic manipulation policies. As illustrated in the figure below, GemBench incorporates seven general action primitives and four levels of generalization, spanning novel placements, rigid and articulated objects, and complex long-horizon tasks. 
 
@@ -77,7 +77,7 @@ sbatch job_scripts/train_3dlotus_policy_peract.sh
 sbatch job_scripts/eval_3dlotus_policy_peract.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/ym63ogysi7187ybe6147u/APhpyKBg85rfozgTCGNjOvg?rlkey=kocpzhg1lnbrofjig6ju9vxps&st=5u4g3lau&dl=0). You should put them in the folder `data/experiments/peract/3dlotus/v1`.
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fi/4qz7p7v5pwf3wvoi9dgr7/3dlotus.tar.gz?rlkey=nmlufbdx5uxhhsr7gn0glv77s&st=obhogdgk&dl=0). You should put them in the folder `data/experiments/peract/3dlotus/v1`.
 
 ## 3D-LOTUS++ Policy with LLM and VLM
 
@@ -90,7 +90,7 @@ Train the 3D-LOTUS++ motion planning policy on the GemBench train split. It take
 sbatch job_scripts/train_3dlotusplus_motion_planner.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/e623fv9wvu8ke1qjp7ni5/AEydRnEnUHk-eA6n5EVsb_E?rlkey=1uv7fl7zfega1ed80qw3gbzge&st=whuys6zg&dl=0). . You should put them in the folder data/experiments/gembench/3dlotusplus/v1
+The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/e623fv9wvu8ke1qjp7ni5/AEydRnEnUHk-eA6n5EVsb_E?rlkey=1uv7fl7zfega1ed80qw3gbzge&st=whuys6zg&dl=0). You should put them in the folder data/experiments/gembench/3dlotusplus/v1
 
 ### Evaluation
 
@@ -108,10 +108,10 @@ sbatch job_scripts/eval_3dlotusplus_policy.sh
 ## Citation
 If you use our GemBench benchmark or find our code helpful, please kindly cite our work:
 ```bibtex
- @inproceedings{garcia24gembench,
+ @inproceedings{garcia25gembench,
     author    = {Ricardo Garcia and Shizhe Chen and Cordelia Schmid},
     title     = {Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy},
-    booktitle = {preprint},
-    year      = {2024}
-}    
+    booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+    year      = {2025}
+}
 ```
