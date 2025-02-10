@@ -3,7 +3,7 @@
   <h3>
     <a href="http://rjgpinel.github.io/">Ricardo Garcia*</a>,
     <a href="https://cshizhe.github.io/">Shizhe Chen*</a>,
-    <a href="https://www.di.ens.fr/willow/people_webpages/cordelia/">Cordelia Schmid</a>
+    <a href="https://cordeliaschmid.github.io/">Cordelia Schmid</a>
   </h3>
   <h3>ICRA 2025</h3>
 
@@ -21,7 +21,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-generalizable-vision-language-robotic/robot-manipulation-on-rlbench)](https://paperswithcode.com/sota/robot-manipulation-on-rlbench?p=towards-generalizable-vision-language-robotic)
 
 </div>
-
 
 
 ## Overview
