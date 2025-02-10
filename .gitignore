@@ -16,5 +16,4 @@ build/
 dependencies
 data
 slurm_logs
-notebooks
 .ipynb_checkpoints/

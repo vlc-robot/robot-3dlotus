@@ -1,6 +1,30 @@
-# Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy
+<div align="center">
+  <h1>Towards Generalizable Vision-Language Robotic Manipulation: <br>A Benchmark and LLM-guided 3D Policy</h1>
+  <h3>
+    <a href="http://rjgpinel.github.io/">Ricardo Garcia*</a>,
+    <a href="https://cshizhe.github.io/">Shizhe Chen*</a>,
+    <a href="https://www.di.ens.fr/willow/people_webpages/cordelia/">Cordelia Schmid</a>
+  </h3>
+  <h3>ICRA 2025</h3>
 
-This repository is the official implementation of "[Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy](https://arxiv.org/abs/2410.01345)" (ICRA 2025).
+  <!-- Badges -->
+  <p>
+    <a href="https://www.di.ens.fr/willow/research/gembench/">
+      <img src="https://img.shields.io/badge/Web-GemBench-blue" alt="GemBench Project Web Badge">
+    </a>
+    <a href="https://arxiv.org/abs/2410.01345">
+      <img src="https://img.shields.io/badge/Paper-arxiv%3A2410.01345-red" alt="arXiv Paper Badge">
+    </a>
+  </p>
+  
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-generalizable-vision-language-robotic/robot-manipulation-generalization-on-gembench)](https://paperswithcode.com/sota/robot-manipulation-generalization-on-gembench?p=towards-generalizable-vision-language-robotic)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-generalizable-vision-language-robotic/robot-manipulation-on-rlbench)](https://paperswithcode.com/sota/robot-manipulation-on-rlbench?p=towards-generalizable-vision-language-robotic)
+
+</div>
+
+
+
+## Overview
 
 Generalizing language-conditioned robotic policies to new tasks remains a significant challenge, hampered by the lack of suitable simulation benchmarks. In this paper, we address this gap by introducing GemBench, a novel benchmark to assess generalization capabilities of vision-language robotic manipulation policies. As illustrated in the figure below, GemBench incorporates seven general action primitives and four levels of generalization, spanning novel placements, rigid and articulated objects, and complex long-horizon tasks. 
 
@@ -14,6 +38,9 @@ We evaluate state-of-the-art approaches on GemBench and also introduce a new met
 See [INSTALL.md](INSTALL.md) for detailed instructions in installation.
 
 ## Dataset
+
+You can follow the instructions [here](DATAGEN.md) to generate the training data on your own, or download our generated dataset.
+
 The dataset can be found in [Dropbox](https://www.dropbox.com/scl/fo/y0jj42hmrhedofd7dmb53/APlY-eJRqv375beJTIOszFc?rlkey=2txputjiysyg255oewin2m4t2&st=vfoctgi3&dl=0).
 Put the dataset in the `data/gembench` folder.
 Dataset structure is as follows:
@@ -24,22 +51,21 @@ Dataset structure is as follows:
             - microsteps: 567M, initial configurations for each episode
             - keysteps_bbox: 160G, extracted keysteps data
             - keysteps_bbox_pcd: (used to train 3D-LOTUS)
-                - voxel1m: 10G, processed point clouds
+                - voxel1cm: 10G, processed point clouds
                 - instr_embeds_clip.npy: instructions encoded by CLIP text encoder
             - motion_keysteps_bbox_pcd: (used to train 3D-LOTUS++ motion planner)
-                - voxel1m: 2.8G, processed point clouds
+                - voxel1cm: 2.8G, processed point clouds
                 - action_embeds_clip.npy: action names encoded by CLIP text encoder
         - val_dataset
             - microsteps: 110M, initial configurations for each episode
             - keysteps_bbox_pcd:
-                - voxel1m: 941M, processed point clouds
+                - voxel1cm: 941M, processed point clouds
         - test_dataset
             - microsteps: 2.2G, initial configurations for each episode
 ```
 
 The RLBench-18task dataset (peract) can be downloaded [here](https://www.dropbox.com/scl/fo/f01284con45rv1j80um1x/AAHs9tK4vFQPRvHKALvFUu4?rlkey=6lz54q7zwont1sb2ft25ib6k1&st=6p85ymk9&dl=0), following the same dataset structure as gembench.
 
-**New!**: The scripts to generate the training data can be found [here](DATAGEN.md).
 
 ## 3D-LOTUS Policy
 
@@ -104,6 +130,12 @@ See comments in the following scripts:
 # both validation and test splits
 sbatch job_scripts/eval_3dlotusplus_policy.sh
 ```
+
+## Notebooks
+Run our models on the RLBench simulator with jupyter notebook in interactive mode:
+- [`notebooks/eval_3dlotus_policy.ipynb`](notebooks/eval_3dlotus_policy.ipynb)
+- [`notebooks/eval_3dlotus++_policy.ipynb`](notebooks/eval_3dlotus++_policy.ipynb)
+
 
 ## Citation
 If you use our GemBench benchmark or find our code helpful, please kindly cite our work:
