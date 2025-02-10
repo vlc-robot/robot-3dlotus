@@ -1,5 +1,8 @@
 # Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-generalizable-vision-language-robotic/robot-manipulation-generalization-on-gembench)](https://paperswithcode.com/sota/robot-manipulation-generalization-on-gembench?p=towards-generalizable-vision-language-robotic)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-generalizable-vision-language-robotic/robot-manipulation-on-rlbench)](https://paperswithcode.com/sota/robot-manipulation-on-rlbench?p=towards-generalizable-vision-language-robotic)
+
 This repository is the official implementation of "[Towards Generalizable Vision-Language Robotic Manipulation: A Benchmark and LLM-guided 3D Policy](https://arxiv.org/abs/2410.01345)" (ICRA 2025).
 
 Generalizing language-conditioned robotic policies to new tasks remains a significant challenge, hampered by the lack of suitable simulation benchmarks. In this paper, we address this gap by introducing GemBench, a novel benchmark to assess generalization capabilities of vision-language robotic manipulation policies. As illustrated in the figure below, GemBench incorporates seven general action primitives and four levels of generalization, spanning novel placements, rigid and articulated objects, and complex long-horizon tasks. 
@@ -24,15 +27,15 @@ Dataset structure is as follows:
             - microsteps: 567M, initial configurations for each episode
             - keysteps_bbox: 160G, extracted keysteps data
             - keysteps_bbox_pcd: (used to train 3D-LOTUS)
-                - voxel1m: 10G, processed point clouds
+                - voxel1cm: 10G, processed point clouds
                 - instr_embeds_clip.npy: instructions encoded by CLIP text encoder
             - motion_keysteps_bbox_pcd: (used to train 3D-LOTUS++ motion planner)
-                - voxel1m: 2.8G, processed point clouds
+                - voxel1cm: 2.8G, processed point clouds
                 - action_embeds_clip.npy: action names encoded by CLIP text encoder
         - val_dataset
             - microsteps: 110M, initial configurations for each episode
             - keysteps_bbox_pcd:
-                - voxel1m: 941M, processed point clouds
+                - voxel1cm: 941M, processed point clouds
         - test_dataset
             - microsteps: 2.2G, initial configurations for each episode
 ```
