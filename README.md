@@ -1,11 +1,11 @@
 <div align="center">
   <h2>Towards Generalizable Vision-Language Robotic Manipulation: <br>A Benchmark and LLM-guided 3D Policy</h2>
-  <h3>
+  <h4>
     <a href="http://rjgpinel.github.io/">Ricardo Garcia*</a>,
     <a href="https://cshizhe.github.io/">Shizhe Chen*</a>,
     <a href="https://cordeliaschmid.github.io/">Cordelia Schmid</a>
-  </h3>
-  <h3>ICRA 2025</h3>
+  </h4>
+  <h4>ICRA 2025</h4>
 
   <!-- Badges -->
   <p>
