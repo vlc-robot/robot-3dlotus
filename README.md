@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Towards Generalizable Vision-Language Robotic Manipulation: <br>A Benchmark and LLM-guided 3D Policy</h1>
+  <h2>Towards Generalizable Vision-Language Robotic Manipulation: <br>A Benchmark and LLM-guided 3D Policy</h2>
   <h3>
     <a href="http://rjgpinel.github.io/">Ricardo Garcia*</a>,
     <a href="https://cshizhe.github.io/">Shizhe Chen*</a>,
