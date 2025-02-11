@@ -34,12 +34,15 @@ class LlamaTaskPlanner(object):
             self.use_local_llama = True
             tokenizer_path = os.path.join(ckpt_dir, 'tokenizer.model')
 
-            # Llama can only be loaded in distributed env
-            os.environ['MASTER_ADDR'] = 'localhost'
-            os.environ['MASTER_PORT'] = str(master_port)
+            # # Llama can only be loaded in distributed env
+            # os.environ['MASTER_ADDR'] = 'localhost'
+            # os.environ['MASTER_PORT'] = str(master_port)
+            init_method = "file:///tmp/tmpllama"
             # TODO: change the device
             if not torch.distributed.is_initialized():    
-                torch.distributed.init_process_group(backend='nccl', rank=0, world_size=1)
+                torch.distributed.init_process_group(
+                    backend='nccl', init_method=init_method, rank=0, world_size=1
+                )
             # https://github.com/openai/tiktoken/issues/75
             os.environ['TIKTOKEN_CACHE_DIR'] = ""
 
