@@ -47,6 +47,6 @@ singularity exec --bind $HOME:$HOME,$SCRATCH:$SCRATCH --nv ${submitted_sif_image
 singularity exec --bind $HOME:$HOME,$SCRATCH:$SCRATCH --nv ${gembench_sif_image} xvfb-run -a python challenges/client.py --port 13000
 ```
 
-An example Singularity image for running 3D-LOTUS++ will be released soon, along with additional instructions for building the Singularity image.
+We will provide an example Singularity image for running 3D-LOTUS++ and additional instructions for building the Singularity image once you register the GemBench challenge through [this form](https://docs.google.com/forms/d/e/1FAIpQLSfEZI22Hrc-wtgmdsKya08xa7W_atL-xq_vOHb9qo6f-jWXAA/viewform?usp=dialog).
 
 Happy hacking!
