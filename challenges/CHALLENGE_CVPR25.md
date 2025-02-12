@@ -31,6 +31,11 @@ The construction of the singularity image is described in [Starter Code](#starte
 
 The document should briefly describe any additional data or pretrained models used in the submitted solution. Report the performance on GemBench L1-L4, including success rate at each level, runtime and hardware requirement. Submissions that outperform the 3D-LOTUS++ baseline will be evaluated on the private testing split.
 
+Send your submission to: 
+<a href="mailto:robomanigrail@gmail.com" class="email-link">
+    robomanigrail@gmail.com
+</a>. <strong>Note:</strong> Please ensure your email includes: your team name, challenge name and the required submission files as specified above.
+
 - Each team is limited to 5 total submissions during the challenge period. We will provide teams with opportunities to verify that their submitted code can run successfully in our machines. The highest-performing submission will be considered for final evaluation. 
 
 - At the end of the challenge, participating teams should submit a detailed report (4–8 pages) describing their methods and results. Selected teams will be invited to present their work (oral or poster) at the workshop.
