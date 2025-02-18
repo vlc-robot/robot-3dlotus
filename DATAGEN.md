@@ -1,5 +1,6 @@
 # Instructions on Dataset Generation
 
+## Demonstration Generation and Preprocessing
 
 We provide the scripts to generate training demonstrations below:
 
@@ -44,4 +45,20 @@ ${python_bin} preprocess/gen_simple_policy_data.py \
     --output_dir ${keystep_pcd_dir} \
     --voxel_size 0.01 \
     --task ${task} --variation_id ${variation}
+```
+
+## Instruction Embedding Generation
+
+```bash
+
+# generate clip embeddings for all instructions
+python preprocess/gen_instr_text_embeds.py \
+    --input_file assets/taskvars_instructions_new.json \
+    --output_dir your_output_dir \
+    --model_name clip
+
+# generate clip embeddings for action names
+python preprocess/gen_action_text_embeds.py \
+    --output_dir your_output_dir \
+    --model_name clip
 ```
