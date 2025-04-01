@@ -39,12 +39,19 @@ ${python_bin} preprocess/generate_dataset_keysteps.py \
     --task ${task} --variation_id ${variation} \
     --image_size ${img_size} --save_masks
 
-# 3. Convert to point clouds
+# 3. Convert to point clouds (for training 3D-LOTUS)
 ${python_bin} preprocess/gen_simple_policy_data.py \
     --input_dir ${keystep_data_dir} \
     --output_dir ${keystep_pcd_dir} \
     --voxel_size 0.01 \
     --task ${task} --variation_id ${variation}
+
+# 4. Convert to substeps data (for training motion policy in 3D-LOTUS++)
+motion_keystep_pcd_dir=$data_dir/train_dataset/motion_keysteps_bbox_pcd/seed${seed}
+
+${python_bin} preprocess/gen_motion_planner_data.py \
+    --old_keystep_pcd_dir ${keystep_pcd_dir} \
+    --new_keystep_pcd_dir ${motion_keystep_pcd_dir}
 ```
 
 ## Instruction Embedding Generation
