@@ -40,7 +40,7 @@ See [INSTALL.md](INSTALL.md) for detailed instructions in installation.
 
 You can follow the instructions [here](DATAGEN.md) to generate the training data on your own, or download our generated dataset.
 
-The dataset can be found in [Dropbox](https://www.dropbox.com/scl/fo/y0jj42hmrhedofd7dmb53/APlY-eJRqv375beJTIOszFc?rlkey=2txputjiysyg255oewin2m4t2&st=vfoctgi3&dl=0).
+The dataset can be found in [Hugging Face](https://huggingface.co/datasets/rjgpinel/GEMBench).
 Put the dataset in the `data/gembench` folder.
 Dataset structure is as follows:
 ```
@@ -63,7 +63,7 @@ Dataset structure is as follows:
             - microsteps: 2.2G, initial configurations for each episode
 ```
 
-The RLBench-18task dataset (peract) can be downloaded [here](https://www.dropbox.com/scl/fo/f01284con45rv1j80um1x/AAHs9tK4vFQPRvHKALvFUu4?rlkey=6lz54q7zwont1sb2ft25ib6k1&st=6p85ymk9&dl=0), following the same dataset structure as gembench.
+The RLBench-18task dataset (peract) can be downloaded [here](https://huggingface.co/datasets/rjgpinel/RLBench-18Task/tree/main), following the same dataset structure as gembench.
 
 
 ## 3D-LOTUS Policy
@@ -74,7 +74,7 @@ Train the 3D-LOTUS policy end-to-end on the GemBench train split. It takes about
 sbatch job_scripts/train_3dlotus_policy.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/0g6iz7d7zb524339dgtms/AHS42SO7aPpwut8I8YN8H3w?rlkey=3fwdehsguqsxofzq9kp9fy8fm&st=eqdd6qvf&dl=0). You should put them in the folder `data/experiments/gembench/3dlotus/v1`.
+The trained checkpoints are available [here](https://huggingface.co/rjgpinel/3dlotus/tree/main/GEMBench/v1). You should put them in the folder `data/experiments/gembench/3dlotus/v1`.
 
 ### Evaluation
 ```bash
@@ -102,7 +102,7 @@ sbatch job_scripts/train_3dlotus_policy_peract.sh
 sbatch job_scripts/eval_3dlotus_policy_peract.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fi/4qz7p7v5pwf3wvoi9dgr7/3dlotus.tar.gz?rlkey=nmlufbdx5uxhhsr7gn0glv77s&st=obhogdgk&dl=0). You should put them in the folder `data/experiments/peract/3dlotus/v1`.
+The trained checkpoints are available [here](https://huggingface.co/rjgpinel/3dlotus/tree/main/RLBench_18task/v2). You should put them in the folder `data/experiments/peract/3dlotus/v1`.
 
 ## 3D-LOTUS++ Policy with LLM and VLM
 
@@ -115,7 +115,7 @@ Train the 3D-LOTUS++ motion planning policy on the GemBench train split. It take
 sbatch job_scripts/train_3dlotusplus_motion_planner.sh
 ```
 
-The trained checkpoints are available [here](https://www.dropbox.com/scl/fo/e623fv9wvu8ke1qjp7ni5/AEydRnEnUHk-eA6n5EVsb_E?rlkey=1uv7fl7zfega1ed80qw3gbzge&st=whuys6zg&dl=0). You should put them in the folder data/experiments/gembench/3dlotusplus/v1
+The trained checkpoints are available [here](https://huggingface.co/rjgpinel/3dlotusplus). You should put them in the folder data/experiments/gembench/3dlotusplus/v1
 
 ### Evaluation
 
