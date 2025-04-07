@@ -32,6 +32,7 @@ from genrobo3d.configs.rlbench.constants import get_robot_workspace, get_rlbench
 from genrobo3d.utils.robot_box import RobotBox
 from genrobo3d.train.datasets.common import gen_seq_masks
 from genrobo3d.evaluation.common import write_to_file
+from genrobo3d.vlm_models.clip_encoder import ClipEncoder
 
 
 class Arguments(tap.Tap):
@@ -99,10 +100,16 @@ class Actioner(object):
 
         data_cfg = self.config.TRAIN_DATASET
         self.data_cfg = data_cfg
-        self.instr_embeds = np.load(data_cfg.instr_embed_file, allow_pickle=True).item()
+        if os.path.exists(data_cfg.instr_embed_file):
+            self.instr_embeds = np.load(data_cfg.instr_embed_file, allow_pickle=True).item()
+        else:
+            self.instr_embeds = {}
         if data_cfg.instr_embed_type == 'last':
             self.instr_embeds = {instr: embeds[-1:] for instr, embeds in self.instr_embeds.items()}
         self.taskvar_instrs = json.load(open(data_cfg.taskvar_instr_file))
+
+        # Load clip text encoder
+        self.clip_model = ClipEncoder()
 
         self.TABLE_HEIGHT = self.WORKSPACE['TABLE_HEIGHT']
 
@@ -252,6 +259,12 @@ class Actioner(object):
         
         # select one instruction
         instr = self.taskvar_instrs[taskvar][0]
+        if instr not in self.instr_embeds:
+            instr_embed = self.clip_model('text', instr, use_prompt=False, output_hidden_states=True)
+            instr_embed = instr_embed[0].data.cpu().numpy()
+            if self.data_cfg.instr_embed_type == 'last':
+                instr_embed = instr_embed[-1:]
+            self.instr_embeds[instr] = instr_embed
         instr_embed = self.instr_embeds[instr]
         
         pc_ft, pc_centroid, pc_radius, ee_pose = self.process_point_clouds(
