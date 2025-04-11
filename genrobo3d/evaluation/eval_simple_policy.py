@@ -186,15 +186,15 @@ class Actioner(object):
                 if gt_sem is not None:
                     gt_sem = gt_sem[outlier_masks]
 
-        # remove non-object points
-        if not self.args.real_robot:
-            rm_label_ids = get_rlbench_labels(
-                taskvar.split('+')[0], table=self.data_cfg.rm_table, robot=(self.data_cfg.rm_robot=='gt'), wall=False, floor=False
-            )
-            if len(rm_label_ids) > 0:
-                rm_mask = self._get_mask_with_label_ids(gt_sem, rm_label_ids)
-                xyz = xyz[~rm_mask]
-                rgb = rgb[~rm_mask]
+        # # remove non-object points
+        # if not self.args.real_robot:
+        #     rm_label_ids = get_rlbench_labels(
+        #         taskvar.split('+')[0], table=self.data_cfg.rm_table, robot=(self.data_cfg.rm_robot=='gt'), wall=False, floor=False
+        #     )
+        #     if len(rm_label_ids) > 0:
+        #         rm_mask = self._get_mask_with_label_ids(gt_sem, rm_label_ids)
+        #         xyz = xyz[~rm_mask]
+        #         rgb = rgb[~rm_mask]
         
         if self.data_cfg.rm_robot.startswith('box'):
             mask = self._get_mask_with_robot_box(xyz, arm_links_info, self.data_cfg.rm_robot)
@@ -249,7 +249,7 @@ class Actioner(object):
         return pc_ft, centroid, radius, ee_pose
 
 
-    def preprocess_obs(self, taskvar, step_id, obs):
+    def preprocess_obs(self, taskvar, step_id, obs, instructions):
         rgb = np.stack(obs['rgb'], 0)  # (N, H, W, C)
         xyz = np.stack(obs['pc'], 0)  # (N, H, W, C)
         if 'gt_mask' in obs:
@@ -258,7 +258,8 @@ class Actioner(object):
             gt_sem = None
         
         # select one instruction
-        instr = self.taskvar_instrs[taskvar][0]
+        # instr = self.taskvar_instrs[taskvar][0]
+        instr = instructions[0]
         if instr not in self.instr_embeds:
             instr_embed = self.clip_model('text', instr, use_prompt=False, output_hidden_states=True)
             instr_embed = instr_embed[0].data.cpu().numpy()
@@ -302,7 +303,7 @@ class Actioner(object):
         # print(obs_state_dict)
         taskvar = f'{task_str}+{variation}'
         batch = self.preprocess_obs(
-            taskvar, step_id, obs_state_dict,
+            taskvar, step_id, obs_state_dict, instructions,
         )
         with torch.no_grad():
             actions = []

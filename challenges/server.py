@@ -7,14 +7,22 @@ msgpack_numpy.patch()
 
 from flask import Flask, request
 
-from challenges.actioner import RandomActioner, ThreeDLotusPlusActioner
+from challenges.actioner import (
+    RandomActioner, 
+    ThreeDLotusActioner, 
+    ThreeDLotusPlusActioner
+)
 
 
 def main(args):
     app = Flask(__name__)
     
-    actioner = RandomActioner()
-    # actioner = ThreeDLotusPlusActioner()
+    if args.model == '3dlotus':
+        actioner = ThreeDLotusActioner()
+    elif args.model == '3dlotusplus':
+        actioner = ThreeDLotusPlusActioner()
+    else:
+        actioner = RandomActioner()
 
     @app.route('/predict', methods=['POST'])
     def predict():
@@ -42,6 +50,7 @@ if __name__ == "__main__":
     parser.add_argument('--ip', type=str, default="localhost")
     parser.add_argument('--port', type=int, default=13000)
     parser.add_argument('--debug', action='store_true', default=False)
+    parser.add_argument('--model', choices=['3dlotus', '3dlotusplus'], default='3dlotusplus')
     args = parser.parse_args()
     main(args)
 

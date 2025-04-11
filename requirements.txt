@@ -34,7 +34,6 @@ spconv_cu120==2.3.6
 tensorboardX==2.6.2.2
 termcolor==2.5.0
 timm==1.0.9
-torch_scatter==2.1.2
 tqdm==4.66.4
 transformers==4.41.2
 typed_argument_parser==1.10.0

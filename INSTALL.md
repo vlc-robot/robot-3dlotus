@@ -10,6 +10,7 @@ conda activate gembench
 
 conda install nvidia/label/cuda-12.1.0::cuda
 pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+FORCE_CUDA=1 pip install torch-scatter==2.1.2
 
 export CUDA_HOME=$HOME/miniconda3/envs/gembench
 export CPATH=$CUDA_HOME/targets/x86_64-linux/include:$CPATH
