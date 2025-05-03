@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd $HOME/codes/robot-3dlotus
+cd /opt/codes/robot-3dlotus
 
 model_name=$1   # 3dlotusplus, 3dlotus
 port=$2         # 13000
