@@ -31,15 +31,14 @@ ENV LD_LIBRARY_PATH="/usr/local/cuda/lib64"
 RUN nvcc --version
 
 # Install Miniconda
-RUN mkdir -p /root/miniconda3 \
-    && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /root/miniconda3/miniconda.sh \
-    && bash /root/miniconda3/miniconda.sh -b -u -p /root/miniconda3 \
-    && rm /root/miniconda3/miniconda.sh \
-    && /root/miniconda3/bin/conda init bash \
-    && . /root/.bashrc
+RUN mkdir -p /opt/miniconda3 \
+    && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda3/miniconda.sh \
+    && bash /opt/miniconda3/miniconda.sh -b -u -p /opt/miniconda3 \
+    && rm /opt/miniconda3/miniconda.sh \
+    && /opt/miniconda3/bin/conda init bash
 
 # Set PATH environment variable after installing Miniconda
-ENV PATH="/root/miniconda3/bin:${PATH}"
+ENV PATH="/opt/miniconda3/bin:${PATH}"
 
 # Create and activate conda environment
 RUN conda create -y -n gembench python=3.10
@@ -47,8 +46,8 @@ RUN conda create -y -n gembench python=3.10
 RUN conda run -n gembench --no-capture-output pip --default-timeout=2400 install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121
 
 # Clone and install robot-3dlotus
-RUN mkdir /root/codes \
-    && cd /root/codes \
+RUN mkdir /opt/codes \
+    && cd /opt/codes \
     && git clone https://github.com/vlc-robot/robot-3dlotus.git \
     && cd robot-3dlotus \
     && conda run -n gembench --no-capture-output pip install -r requirements.txt \
@@ -58,36 +57,36 @@ ENV TORCH_CUDA_ARCH_LIST="6.0;6.1;7.0;7.5;8.0;8.6;8.9;9.0+PTX"
 RUN conda run -n gembench --no-capture-output FORCE_CUDA=1 pip install torch-scatter==2.1.2
 
 # Install chamferdist
-RUN mkdir /root/codes/robot-3dlotus/dependencies \
-    && cd /root/codes/robot-3dlotus/dependencies \
+RUN mkdir /opt/codes/robot-3dlotus/dependencies \
+    && cd /opt/codes/robot-3dlotus/dependencies \
     && git clone https://github.com/cshizhe/chamferdist.git \
     && cd chamferdist \
     && conda run -n gembench --no-capture-output FORCE_CUDA=1 python setup.py install
 
 # Install Pointnet2_PyTorch
-RUN cd /root/codes/robot-3dlotus/dependencies \
+RUN cd /opt/codes/robot-3dlotus/dependencies \
     && git clone https://github.com/cshizhe/Pointnet2_PyTorch.git \
     && cd Pointnet2_PyTorch/pointnet2_ops_lib \
     && conda run -n gembench --no-capture-output FORCE_CUDA=1 python setup.py install
 
 # Install llama
-RUN cd /root/codes/robot-3dlotus/dependencies \
+RUN cd /opt/codes/robot-3dlotus/dependencies \
     && git clone https://github.com/cshizhe/llama3.git \
     && cd llama3 \
     && conda run -n gembench --no-capture-output pip install -e .
 
 # Download models
 # 3D-Lotus and 3D-Lotus++
-RUN mkdir -p /root/codes/robot-3dlotus/data/experiments/3dlotus \
+RUN mkdir -p /opt/codes/robot-3dlotus/data/experiments/3dlotus \
     && conda run -n gembench --no-capture-output \
        huggingface-cli download --repo-type model \
        --local-dir-use-symlinks False \
-       --local-dir /root/codes/robot-3dlotus/data/experiments/3dlotus \
+       --local-dir /opt/codes/robot-3dlotus/data/experiments/3dlotus \
        rjgpinel/3dlotus --include GEMBench/ \
     && conda run -n gembench --no-capture-output \
         huggingface-cli download --repo-type model \
         --local-dir-use-symlinks False \
-        --local-dir /root/codes/robot-3dlotus/data/experiments/3dlotusplus \
+        --local-dir /opt/codes/robot-3dlotus/data/experiments/3dlotusplus \
         rjgpinel/3dlotusplus --include GEMBench/
 
 # CLIP ViT for text encoding
@@ -113,7 +112,7 @@ RUN conda run -n gembench --no-capture-output \
     huggingface-cli login --token `Your Token ID` \
     && conda run -n gembench --no-capture-output huggingface-cli download --repo-type model \
        --local-dir-use-symlinks False \
-       --local-dir /root/codes/robot-3dlotus/data/pretrained/meta-llama/Meta-Llama-3-8B-Instruct \
+       --local-dir /opt/codes/robot-3dlotus/data/pretrained/meta-llama/Meta-Llama-3-8B-Instruct \
        meta-llama/Meta-Llama-3-8B-Instruct \
        --include original/
 
@@ -127,11 +126,8 @@ RUN conda run -n gembench --no-capture-output \
 RUN conda run -n gembench --no-capture-output pip cache purge \
     && conda clean --all -y
 
-# Add this to make the conda environment accessible when container starts
-RUN echo "conda activate gembench" >> /root/.bashrc
-
 # Set working directory
-WORKDIR /root/codes/robot-3dlotus
+WORKDIR /opt/codes/robot-3dlotus
 
 # Default command when container starts
 CMD ["/bin/bash"]
