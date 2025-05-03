@@ -31,7 +31,8 @@ class RandomActioner(object):
 
 class ThreeDLotusActioner(object):
     def __init__(self):
-        expr_dir = 'data/experiments/gembench/3dlotus/v1'
+        # expr_dir = 'data/experiments/gembench/3dlotus/v1'
+        expr_dir = 'data/experiments/3dlotus/GEMBench/v1'
         ckpt_step = 150000
        
         args = EasyDict(
@@ -65,17 +66,13 @@ class ThreeDLotusActioner(object):
 
 class ThreeDLotusPlusActioner(object):
     def __init__(self):
-        with open('genrobo3d/configs/rlbench/robot_pipeline.yaml', 'r') as f:
+        # with open('genrobo3d/configs/rlbench/robot_pipeline.yaml', 'r') as f:
+        with open('challenges/robot_pipeline.yaml', 'r') as f:
             pipeline_config = yaml.safe_load(f)
         pipeline_config = EasyDict(pipeline_config)
 
-        pipeline_config.llm_planner.use_groundtruth = False
-        pipeline_config.object_grounding.use_groundtruth = False
-        pipeline_config.motion_planner.run_action_step = 5
-        pipeline_config.motion_planner.save_obs_outs = False
-
         mp_expr_dir = pipeline_config.motion_planner.expr_dir
-        mp_ckpt_step = 140000
+        mp_ckpt_step = pipeline_config.motion_planner.ckpt_step
         pipeline_config.motion_planner.checkpoint = os.path.join(
             mp_expr_dir, 'ckpts', f'model_step_{mp_ckpt_step}.pt'
         )

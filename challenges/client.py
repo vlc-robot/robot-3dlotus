@@ -18,12 +18,11 @@ from rlbench.backend.exceptions import InvalidActionError
 from genrobo3d.rlbench.environments import RLBenchEnv, Mover
 
 
-NUM_EPISODES = 25
-MAX_STEPS = 25
-IMAGE_SIZE = 256
-
-
 def main(taskvar, server_addr, microstep_data_dir='', output_file=None):
+    NUM_EPISODES = 25
+    MAX_STEPS = 25
+    IMAGE_SIZE = 256
+
     task_str, variation_id = taskvar.split('+')
     variation_id = int(variation_id)
 
@@ -89,6 +88,7 @@ def main(taskvar, server_addr, microstep_data_dir='', output_file=None):
                 'instruction': instruction,
                 'obs_state_dict': obs_state_dict,
             }
+            # np.save('batch_test.npy', batch)
 
             data = msgpack_numpy.packb(batch)
             # print(f"Calling the server {server_addr}")
@@ -115,14 +115,15 @@ def main(taskvar, server_addr, microstep_data_dir='', output_file=None):
                 reward = 0
                 break
     
-        with jsonlines.open(output_file, 'a', flush=True) as outf:
-            outf.write({
-                'episode_id': episode_id,
-                'instr': instruction, 
-                'success': reward,
-                'error': error_type,
-                'nsteps': step_id+1,
-            })
+        if output_file is not None:
+            with jsonlines.open(output_file, 'a', flush=True) as outf:
+                outf.write({
+                    'episode_id': episode_id,
+                    'instr': instruction, 
+                    'success': reward,
+                    'error': error_type,
+                    'nsteps': step_id+1,
+                })
 
     print('Success Rate: {:.2f}%'.format(success_rate*100))
 

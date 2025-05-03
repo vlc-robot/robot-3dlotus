@@ -1,0 +1,31 @@
+pipeline:
+    restart: True
+    real_robot: False
+
+llm_planner:
+    master_port: 12300
+    use_groundtruth: False
+
+    gt_plan_file: 'prompts/rlbench/in_context_examples.txt'
+    taskvar_instr_file: 'assets/taskvars_instructions_new.json'
+
+    ckpt_dir: 'data/pretrained/meta-llama/Meta-Llama-3-8B-Instruct/original'
+    groq_model: null
+    cache_file: null
+    prompt_dir: 'prompts/rlbench'
+    asset_dir: 'assets'
+
+object_grounding:
+    use_groundtruth: False
+
+motion_planner:
+    expr_dir: 'data/experiments/3dlotusplus/GEMBench/v1'
+    ckpt_step: 140000
+    run_action_step: 5
+    pc_label_type: coarse
+
+    # automatically setup
+    checkpoint: ''
+    config_file: ''
+    pred_dir: ''
+    save_obs_outs: False
