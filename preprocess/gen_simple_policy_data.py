@@ -24,7 +24,7 @@ def main():
     parser.add_argument('--variation_id', default=None, type=int)
     parser.add_argument('--voxel_size', type=float, default=0.01, help='meters')
     parser.add_argument('--real_robot', default=False, action='store_true')
-    parser.add_argument('--num_cameras', default=None, type=int, help='use all by default')
+    parser.add_argument('--cam_ids', default=None, type=int, nargs='+', help='use all by default')
     args = parser.parse_args()
     
     os.makedirs(args.output_dir, exist_ok=True)
@@ -34,9 +34,13 @@ def main():
     elif args.taskvar_file is not None:
         taskvars = json.load(open(args.taskvar_file))
     else:
-        taskvars = os.listdir(args.input_dir)
+        taskvars = [x for x in os.listdir(args.input_dir) if '+' in x]
 
     workspace = get_robot_workspace(real_robot=args.real_robot)
+    if args.cam_ids is None:
+        cam_ids = [0, 1, 2, 3] # use all cameras
+    else:
+        cam_ids = args.cam_ids
 
     for taskvar in tqdm(taskvars):
         input_lmdb_dir = os.path.join(args.input_dir, taskvar)
@@ -47,18 +51,18 @@ def main():
             continue
             
         out_lmdb_env = lmdb.open(os.path.join(args.output_dir, taskvar), map_size=int(1024**4))
-        
-        with lmdb.open(input_lmdb_dir, readonly=True) as lmdb_env:
+
+        with lmdb.open(input_lmdb_dir, readonly=True, lock=False) as lmdb_env:
             with lmdb_env.begin() as txn:
                 for key, value in txn.cursor():
                     value = msgpack.unpackb(value)
                     
-                    rgb = value['rgb'][:, :args.num_cameras] # (T, N_cam, H, W, 3)
-                    pc = value['pc'][:, :args.num_cameras]   # (T, N_cam, H, W, 3)
+                    rgb = value['rgb'][:, cam_ids] # (T, N_cam, H, W, 3)
+                    pc = value['pc'][:, cam_ids]   # (T, N_cam, H, W, 3)
                     if 'mask' in value:
-                        sem = value['mask'][:, :args.num_cameras] # (T, N_cam, H, W)
+                        sem = value['mask'][:, cam_ids] # (T, N_cam, H, W)
                     elif 'gt_masks' in value:
-                        sem = value['gt_masks'][:, :args.num_cameras] # (T, N_cam, H, W)
+                        sem = value['gt_masks'][:, cam_ids] # (T, N_cam, H, W)
                     else:
                         sem = None
 

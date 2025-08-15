@@ -64,7 +64,7 @@ class SimplePolicyDataset(Dataset):
         for taskvar in self.taskvars:
             if not os.path.exists(os.path.join(data_dir, taskvar)):
                 continue
-            self.lmdb_envs[taskvar] = lmdb.open(os.path.join(data_dir, taskvar), readonly=True)
+            self.lmdb_envs[taskvar] = lmdb.open(os.path.join(data_dir, taskvar), readonly=True, lock=False)
             self.lmdb_txns[taskvar] = self.lmdb_envs[taskvar].begin()
             if all_step_in_batch:
                 self.data_ids.extend(
@@ -339,6 +339,9 @@ class SimplePolicyDataset(Dataset):
             pc_ft = np.concatenate([xyz, rgb], 1)
             if self.use_height:
                 pc_ft = np.concatenate([pc_ft, height[:, None]], 1)
+
+            if len(pc_ft) == 0:
+                continue
 
             if self.pos_type == 'disc':
                 # (npoints, 3, 100)
