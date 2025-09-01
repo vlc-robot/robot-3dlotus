@@ -274,9 +274,9 @@ def run(task_class, args):
                 if attempts > 0:
                     continue
                 problem = (
-                    "Process %d failed collecting task %s (variation: %d, "
+                    "Failed collecting task %s (variation: %d, "
                     "example: %d). Skipping this task/variation.\n%s\n"
-                    % (i, task_env.get_name(), variation_id, ex_idx, str(e))
+                    % (task_env.get_name(), variation_id, ex_idx, str(e))
                 )
                 print(problem)
                 abort_variation = True

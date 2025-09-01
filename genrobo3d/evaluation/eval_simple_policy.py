@@ -162,6 +162,8 @@ class Actioner(object):
         rgb = rgb.reshape(-1, 3)[in_mask]
         if gt_sem is not None:
             gt_sem = gt_sem.reshape(-1)[in_mask]
+        if len(xyz) == 0:
+            return None, None, None, None
 
         # downsampling
         pcd = o3d.geometry.PointCloud()
@@ -272,6 +274,8 @@ class Actioner(object):
             xyz, rgb, gt_sem=gt_sem, ee_pose=copy.deepcopy(obs['gripper']), 
             arm_links_info=obs['arm_links_info'], taskvar=taskvar
         )
+        if pc_ft is None:
+            return None
         
         batch = {
             'pc_fts': torch.from_numpy(pc_ft).float(),
@@ -293,7 +297,8 @@ class Actioner(object):
             
         # for k, v in batch.items():
         #     if k not in ['pc_centroids', 'pc_radius', 'npoints_in_batch']:
-        #         print(k, v.size())
+        #         if isinstance(v, torch.Tensor):
+        #             print(k, v.size())
         return batch
 
     def predict(
@@ -305,26 +310,33 @@ class Actioner(object):
         batch = self.preprocess_obs(
             taskvar, step_id, obs_state_dict, instructions,
         )
-        with torch.no_grad():
-            actions = []
-            # TODO
-            for _ in range(self.args.num_ensembles):
-                action = self.model(batch)[0].data.cpu()
-                actions.append(action)
-            if len(actions) > 1:
-                # print(torch.stack(actions, 0))
-                avg_action = torch.stack(actions, 0).mean(0)
-                pred_rot = torch.from_numpy(R.from_euler(
-                    'xyz', np.mean([R.from_quat(x[3:-1]).as_euler('xyz') for x in actions], 0),
-                ).as_quat())
-                action = torch.cat([avg_action[:3], pred_rot, avg_action[-1:]], 0)
-            else:
-                action = actions[0]
-        action[-1] = torch.sigmoid(action[-1]) > 0.5
+        if batch is not None and len(batch['pc_fts']) > 10:
+            if len(batch['pc_fts']) < 50:
+                print('num points', len(batch['pc_fts']))
+            with torch.no_grad():
+                actions = []
+                # TODO
+                for _ in range(self.args.num_ensembles):
+                    action = self.model(batch)[0].data.cpu()
+                    actions.append(action)
+                if len(actions) > 1:
+                    # print(torch.stack(actions, 0))
+                    avg_action = torch.stack(actions, 0).mean(0)
+                    pred_rot = torch.from_numpy(R.from_euler(
+                        'xyz', np.mean([R.from_quat(x[3:-1]).as_euler('xyz') for x in actions], 0),
+                    ).as_quat())
+                    action = torch.cat([avg_action[:3], pred_rot, avg_action[-1:]], 0)
+                else:
+                    action = actions[0]
+            action[-1] = torch.sigmoid(action[-1]) > 0.5
+        else:
+            action = torch.zeros(8)
+            print('zero action because of empty point cloud')
         
         # action = action.data.cpu().numpy()
         action = action.numpy()
-        action[:3] = action[:3] * batch['pc_radius'] + batch['pc_centroids']
+        if batch is not None:
+            action[:3] = action[:3] * batch['pc_radius'] + batch['pc_centroids']
         # TODO: ensure the action height is above the table
         action[2] = max(action[2], self.TABLE_HEIGHT+0.005)
 

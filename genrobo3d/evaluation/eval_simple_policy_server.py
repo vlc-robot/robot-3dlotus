@@ -23,6 +23,7 @@ from genrobo3d.train.utils.misc import set_random_seed
 from genrobo3d.evaluation.common import write_to_file
 from genrobo3d.evaluation.eval_simple_policy import Actioner
 
+CAMERA_NAMES = ("left_shoulder", "right_shoulder", "wrist", "front")
 
 class ServerArguments(tap.Tap):
     expr_dir: str
@@ -32,6 +33,7 @@ class ServerArguments(tap.Tap):
     image_size: List[int] = [256, 256]
     max_tries: int = 10
     max_steps: int = 25
+    cam_ids: List[int] = [0, 1, 2, 3]
 
     microstep_data_dir: str = ''
     seed: int = 100  # seed for RLBench
@@ -92,6 +94,7 @@ def producer_fn(proc_id, k_res, args, taskvar, pred_file, batch_queue, result_qu
         headless=True,
         image_size=args.image_size,
         cam_rand_factor=0,
+        apply_cameras=[CAMERA_NAMES[cam_id] for cam_id in args.cam_ids]
     )
 
     env.env.launch()
