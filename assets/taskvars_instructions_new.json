@@ -497,7 +497,10 @@
   "pick_and_lift_moon+0": [
     "pick up the red moon and lift it up to the target",
     "grasp the red moon to the target",
-    "lift the red moon up to the target"
+    "lift the red moon up to the target",
+    "pick up the red crescent and lift it up to the target",
+    "grasp the red crescent to the target",
+    "lift the red crescent up to the target"
   ],
   "pick_and_lift_toy+0": [
     "pick up the red rubber duck and lift it up to the target",
@@ -650,5 +653,54 @@
     "the plant needs hydration",
     "pour water from the watering can into the plant pot",
     "water the soil"
+  ],
+  "move_hanger+0": [
+    "move hanger onto the other rackmove the hanger from one rack to the other",
+    "put the hanger on the other rack",
+    "pick up the hanger and place it on the other rack"
+  ],
+  "pick_up_cup+0": [
+    "pick up the red cup",
+    "grasp the red cup and lift it",
+    "lift the red cup"
+  ],
+  "lift_numbered_block+0": [
+    "pick up the block with the number 1",
+    "grasp the 1 numbered block and lift",
+    "lift the 1 numbered block"
+  ],
+  "play_jenga+0": [
+    "play jengaTake the protruding block out of the jenga tower without the tower toppling",
+    "Keeping the tower from tumbling, remove the protruding jenga block",
+    "Ensuring the jenga tower remains in place, slide the protruding block out"
+  ],
+  "place_hanger_on_rack+0": [
+    "pick up the hanger and place in on the rackput the hanger on the rack",
+    "hang the hanger up",
+    "grasp the hanger and hang it up"
+  ],
+  "put_rubbish_in_bin+0": [
+    "put rubbish in bin",
+    "drop the rubbish into the bin",
+    "pick up the rubbish and leave it in the trash can",
+    "throw away the trash, leaving any other objects alone",
+    "chuck way any rubbish on the table rubbish"
+  ],
+  "setup_checkers+0": [
+    "place the remaining checker in its initial position on the board",
+    "prepare the checkers board",
+    "get the chess board ready for a game of checkers",
+    "setup the checkers board",
+    "setup checkers",
+    "arrange the checkers ready for a game",
+    "get checkers ready"
+  ],
+  "take_plate_off_colored_dish_rack+0": [
+    "take plate off the black colored rack",
+    "remove the dish from the black rack",
+    "find the dish placed between the black spokes of the dish rack and drop it on the table",
+    "grasp the plate from the black part of the dish rack, lift it up off of the rack, and leave it on the table top",
+    "move the plate from the black rack to the table's surface",
+    "lift the plate up off the black colored rack and drop it onto the table from a considerable height"
   ]
 }
